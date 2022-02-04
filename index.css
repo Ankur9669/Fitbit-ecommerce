@@ -1,0 +1,116 @@
+.hero-section{
+    position: relative;
+    background-color: #f5f5f5;
+    max-height: 700px;
+}
+.hero-section img{
+    max-height: 700px;
+}
+.overlay-container{
+    position: absolute;
+    left: 25%;
+    top: 35%;
+}
+.overlay-container h1{
+    animation: infinite;
+    animation-name: move;
+    animation-duration: 3.5s; 
+}
+.featured-products-section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.home-section-width{
+    max-width: 1400px;
+    margin: auto;
+}
+.new-arrivals-section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card{
+    max-width: 800px;
+}
+.card-hover{
+    cursor: pointer;
+    transition: 0.3s;
+}
+.card-hover:hover{
+    transform: scale(1.1121);
+}
+.card-new-arrival{
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 1rem 1rem;
+}
+.card-new-arrival .text-overlay{
+    background-color: rgba(33,37,41,0.2);
+}
+.text-overlay-text-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 50%;
+    background-color: white;
+}
+.card-new-arrival:hover{
+    transform: scale(1.1121);
+}
+.home-section-heading{
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+.home-section-heading::after{
+    content: "";
+    width: 6rem;
+    background-color: var(--primary-color);
+    height: 4px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: -12px;
+    border-radius: 1rem;
+}
+.section-wrapper{
+    background-color: var(--primary-color);
+}
+.featured-brands-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.featured-brands-container img{
+    width: 300px;
+    height: 180px;
+    object-fit: cover;
+}
+@media only screen and (max-width: 960px){
+    .overlay-container{
+        left: 15%;
+        top: 25%;
+    }   
+    .overlay-container h1{
+        font-size: 3rem;
+    }
+}
+@media only screen and (max-width: 730px){
+    .overlay-container{
+        left: 5%;
+        top: 20%;
+    }   
+}
+@media only screen and (max-width: 450px){
+    .overlay-container h1{
+        font-size: 2rem;
+    }  
+}
+@keyframes move {
+    0%   {margin-left:50px;}
+    100% {margin-left: 0px;}
+}
