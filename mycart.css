@@ -1,0 +1,19 @@
+.mycart{
+    min-height: 50vh;
+}
+.mycart-container{
+    background-color: tomato;
+    height: 40px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1400px;
+    width: 90%;
+    margin: auto;
+}
+.mycart-items-container{
+    grid-column: 1 / 2;
+}
+.mycart-summary-container{
+    grid-column: 2 / 3;
+}
