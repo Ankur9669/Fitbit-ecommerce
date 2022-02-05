@@ -85,7 +85,7 @@
 }
 .price-details-card .btn-container button{
     width: 100%;
-    margin: 0px;
+    margin: 0rem;
 }
 @media only screen and (max-width: 1028px){
     .grid-50-50{
