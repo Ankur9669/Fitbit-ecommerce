@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FITBIT</title>
+
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://deploy-preview-10--suspicious-sammet-33f1b3.netlify.app/Components/components.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://suspicious-sammet-33f1b3.netlify.app/Components/components.css"
+    />
+    <link rel="stylesheet" href="products.css" />
+    <link rel="stylesheet" href="common.css" />
+  </head>
+
+  <body>
+    <!--  ******************************** Navbar Start ********************************  -->
+    <nav class="navbar">
+      <div>
+        <img
+          alt="hamburger-icon"
+          src="images/hamburger.svg"
+          class="hamburger-icon"
+          id="hamburger-icon"
+        />
+      </div>
+      <div class="logo-container">
+        <div class="logo">
+          <img class="logo-image" alt="logo-image" src="images/neatUI.svg" />
+          <span class="logo-text">FiT</span>
+          BiT
+        </div>
+      </div>
+      <div class="nav-items-container-end">
+        <div class="login-search-bar-container">
+          <button class="button button-primary">Login</button>
+          <div class="input-box">
+            <input
+              type="text"
+              class="input"
+              value=""
+              onchange="change(this)"
+              required
+            />
+            <label class="input-label">Search</label>
+          </div>
+        </div>
+
+        <div class="navbar-icons-container">
+          <div class="badge-container">
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+            <span class="number-badge number-badge-md">24+</span>
+          </div>
+          <div class="badge-container">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <span class="number-badge number-badge-md">24+</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--  ******************************** Navbar End ********************************  -->
+
+    <!--  ******************************** Products Section Start ********************************  -->
+
+    <section class="products-section">
+      <!--  ******************************** Sidebar Start ********************************  -->
+      <div class="sidebar">
+        <div class="filters">
+          <p
+            class="filter-type weight-semi-bold font-medium-large filter-heading"
+          >
+            FILTERS
+            <span class="weight-normal font-small">CLEAR</span>
+          </p>
+          <!--  Sort By Filter Start  -->
+          <div class="filter-type">
+            <p class="weight-semi-bold font-medium">SORT BY</p>
+            <div class="margin-vertical-lg"></div>
+            <ul class="list-style-none filter-list">
+              <li>
+                <input type="radio" name="sort-by" value="price-low-to-high" />
+                <label for="price-high-to-low">Price low to high</label>
+              </li>
+              <li>
+                <input type="radio" name="sort-by" value="price-high-to-low" />
+                <label for="price-high-to-low">Price high to low</label>
+              </li>
+            </ul>
+          </div>
+          <!--  Sort By Filter End  -->
+
+          <!--  Categories Filter Start  -->
+          <div class="filter-type">
+            <p class="weight-semi-bold font-medium">Categories</p>
+            <div class="margin-vertical-lg"></div>
+            <ul class="list-style-none filter-list">
+              <li>
+                <input type="checkbox" name="shoes" />
+                <label for="shoes">Shoes</label>
+              </li>
+              <li>
+                <input type="checkbox" name="bags" />
+                <label for="bags">Bags</label>
+              </li>
+              <li>
+                <input type="checkbox" name="hand-gloves" />
+                <label for="hand-gloves">Hand Gloves</label>
+              </li>
+              <li>
+                <input type="checkbox" name="dumbells" />
+                <label for="dumbells">Dumbells</label>
+              </li>
+            </ul>
+          </div>
+          <!--  Categories Filter End  -->
+
+          <!--  Ratings Filter Start  -->
+          <div class="filter-type">
+            <p class="weight-semi-bold font-medium">Ratings</p>
+            <div class="margin-vertical-lg"></div>
+            <ul class="list-style-none filter-list">
+              <li>
+                <input type="checkbox" name="5-stars" />
+                <label for="5-stars">5 Stars</label>
+              </li>
+              <li>
+                <input type="checkbox" name="4-stars" />
+                <label for="4-stars">4 Stars</label>
+              </li>
+              <li>
+                <input type="checkbox" name="3-stars" />
+                <label for="3-stars">3 Stars</label>
+              </li>
+              <li>
+                <input type="checkbox" name="2-stars" />
+                <label for="2-stars">2 Stars</label>
+              </li>
+              <li>
+                <input type="checkbox" name="1-star" />
+                <label for="1-star">1 Star</label>
+              </li>
+            </ul>
+          </div>
+          <!--  Ratings Filter End  -->
+        </div>
+      </div>
+      <!--  ******************************** Sidebar End ********************************  -->
+
+      <!--  ******************************** Products Container Start ********************************  -->
+
+      <div class="products-container">
+        <div class="spacer-1"></div>
+        <!-- Card 1 Start-->
+        <div class="card card-vertical">
+          <div class="image-container">
+            <img
+              alt="reebok-resistant-tube"
+              src="https://cdn.shopify.com/s/files/1/0610/2882/7370/products/product38.jpg?v=1636690872"
+              class="img-responsive"
+              loading="lazy"
+            />
+          </div>
+          <div class="wrapper">
+            <div class="text-container">
+              <h5
+                class="font-medium-large weight-semi-bold primary-text-color card-vertical-heading"
+              >
+                Reebok Resistant Tube
+                <i
+                  class="fa fa-heart card-vertical-like-icon"
+                  aria-hidden="true"
+                ></i>
+              </h5>
+              <p class="font-medium weight-semi-bold primary-text-color">
+                &#8377;200
+                <span
+                  class="font-extra-small weight-semi-bold strike-through secondary-text-color"
+                  >&#8377;300
+                </span>
+                <span
+                  class="text-badge text-badge-rounded-border text-badge-small discount-percent-horizontal"
+                  >11 % off</span
+                >
+              </p>
+            </div>
+            <div class="btn-container">
+              <button class="button button-primary">
+                <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                Buy Now
+              </button>
+              <button class="button button-outline-secondary">
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 1 End-->
+
+        <!-- Card 2 Start-->
+        <div class="card card-vertical">
+          <div class="image-container">
+            <img
+              alt="reebok-resistant-tube"
+              src="https://cdn.shopify.com/s/files/1/0610/2882/7370/products/product20.jpg?v=1636623455"
+              class="img-responsive"
+              loading="lazy"
+            />
+          </div>
+          <div class="wrapper">
+            <div class="text-container">
+              <h5
+                class="font-medium-large weight-semi-bold primary-text-color card-vertical-heading"
+              >
+                Hand Gloves
+                <i
+                  class="fa fa-heart card-vertical-like-icon"
+                  aria-hidden="true"
+                ></i>
+              </h5>
+              <p class="font-medium weight-semi-bold primary-text-color">
+                &#8377;200
+                <span
+                  class="font-extra-small weight-semi-bold strike-through secondary-text-color"
+                  >&#8377;300
+                </span>
+                <span
+                  class="text-badge text-badge-rounded-border text-badge-small discount-percent-horizontal"
+                  >11 % off</span
+                >
+              </p>
+            </div>
+            <div class="btn-container">
+              <button class="button button-primary">
+                <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                Buy Now
+              </button>
+              <button class="button button-outline-secondary">
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 End -->
+
+        <!-- Card 3 Start -->
+        <div class="card card-vertical">
+          <div class="image-container">
+            <img
+              alt="reebok-resistant-tube"
+              src="https://cdn.shopify.com/s/files/1/0610/2882/7370/products/product17.jpg?v=1636627241"
+              class="img-responsive"
+              loading="lazy"
+            />
+          </div>
+          <div class="wrapper">
+            <div class="text-container">
+              <h5
+                class="font-medium-large weight-semi-bold primary-text-color card-vertical-heading"
+              >
+                Iron Kettlebell
+                <i
+                  class="fa fa-heart card-vertical-like-icon"
+                  aria-hidden="true"
+                ></i>
+              </h5>
+              <p class="font-medium weight-semi-bold primary-text-color">
+                &#8377;200
+                <span
+                  class="font-extra-small weight-semi-bold strike-through secondary-text-color"
+                  >&#8377;300
+                </span>
+                <span
+                  class="text-badge text-badge-rounded-border text-badge-small discount-percent-horizontal"
+                  >11 % off</span
+                >
+              </p>
+            </div>
+            <div class="btn-container">
+              <button class="button button-primary">
+                <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                Buy Now
+              </button>
+              <button class="button button-outline-secondary">
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 End -->
+
+        <!-- Card 4 Start -->
+        <div class="card card-vertical">
+          <div class="image-container">
+            <img
+              alt="reebok-resistant-tube"
+              src="https://cdn.shopify.com/s/files/1/0610/2882/7370/products/product16.jpg?v=1636622911"
+              class="img-responsive"
+              loading="lazy"
+            />
+          </div>
+          <div class="wrapper">
+            <div class="text-container">
+              <h5
+                class="font-medium-large weight-semi-bold primary-text-color card-vertical-heading"
+              >
+                Atomic habits
+                <i
+                  class="fa fa-heart card-vertical-like-icon"
+                  aria-hidden="true"
+                ></i>
+              </h5>
+              <p class="font-medium weight-semi-bold primary-text-color">
+                &#8377;9999
+                <span
+                  class="font-extra-small weight-semi-bold strike-through secondary-text-color"
+                  >&#8377;13000
+                </span>
+                <span
+                  class="text-badge text-badge-rounded-border text-badge-small discount-percent-horizontal"
+                  >19 % off</span
+                >
+              </p>
+            </div>
+            <div class="btn-container">
+              <button class="button button-primary">
+                <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                Buy Now
+              </button>
+              <button class="button button-outline-secondary">
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 End -->
+
+        <!-- Card 5 Start -->
+        <div class="card card-vertical">
+          <div class="image-container">
+            <img
+              alt="reebok-resistant-tube"
+              src="https://cdn.shopify.com/s/files/1/0610/2882/7370/products/product37.jpg?v=1636690723"
+              class="img-responsive"
+              loading="lazy"
+            />
+          </div>
+          <div class="wrapper">
+            <div class="text-container">
+              <h5
+                class="font-medium-large weight-semi-bold primary-text-color card-vertical-heading"
+              >
+                Atomic habits
+                <i
+                  class="fa fa-heart card-vertical-like-icon"
+                  aria-hidden="true"
+                ></i>
+              </h5>
+              <p class="font-medium weight-semi-bold primary-text-color">
+                &#8377;15399
+                <span
+                  class="font-extra-small weight-semi-bold strike-through secondary-text-color"
+                  >&#8377;16544
+                </span>
+                <span
+                  class="text-badge text-badge-rounded-border text-badge-small discount-percent-horizontal"
+                  >23 % off</span
+                >
+              </p>
+            </div>
+            <div class="btn-container">
+              <button class="button button-primary">
+                <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                Buy Now
+              </button>
+              <button class="button button-outline-secondary">
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 5 End -->
+
+        <!-- Card 6 Start -->
+        <div class="card card-vertical">
+          <div class="image-container">
+            <img
+              alt="reebok-resistant-tube"
+              src="https://cdn.shopify.com/s/files/1/0610/2882/7370/products/product1.jpg?v=1636618333"
+              class="img-responsive"
+              loading="lazy"
+            />
+          </div>
+          <div class="wrapper">
+            <div class="text-container">
+              <h5
+                class="font-medium-large weight-semi-bold primary-text-color card-vertical-heading"
+              >
+                Commercial Ellipticals
+                <i
+                  class="fa fa-heart card-vertical-like-icon"
+                  aria-hidden="true"
+                ></i>
+              </h5>
+              <p class="font-medium weight-semi-bold primary-text-color">
+                &#8377;19359
+                <span
+                  class="font-extra-small weight-semi-bold strike-through secondary-text-color"
+                  >&#8377;23539
+                </span>
+                <span
+                  class="text-badge text-badge-rounded-border text-badge-small discount-percent-horizontal"
+                  >25 % off</span
+                >
+              </p>
+            </div>
+            <div class="btn-container">
+              <button class="button button-primary">
+                <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                Buy Now
+              </button>
+              <button class="button button-outline-secondary">
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 6 End -->
+      </div>
+      <!--  ******************************** Products Container End ********************************  -->
+    </section>
+    <!--  ******************************** Products Section End ********************************  -->
+
+    <!--  ******************************** Footer Start ********************************  -->
+    <div class="spacer-3"></div>
+    <footer>
+      <p class="font-medium-large">Made with ♥ by Ankur Gupta</p>
+      <div class="footer-icons-container">
+        <i class="fa fa-github" aria-hidden="true"></i>
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+      </div>
+      <p class="font-medium-large">&copy;Copyright 2022</p>
+    </footer>
+    <!--  ******************************** Footer End ********************************  -->
+  </body>
+</html>

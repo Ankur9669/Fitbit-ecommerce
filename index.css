@@ -6,6 +6,10 @@
 .hero-section img{
     max-height: 700px;
 }
+.hero-section a{
+    display: flex;
+    justify-content: center;
+}
 .overlay-container{
     position: absolute;
     left: 25%;

@@ -12,6 +12,10 @@ body{
     box-sizing: border-box;
     margin: 0;
 }
+ul{
+    margin: 0px;
+    padding: 0px;
+}
 footer{
     display: flex;
     flex-direction: column;
