@@ -82,9 +82,10 @@
     <main class="mycart">
       <h3 class="h2 centered-text">My Cart</h3>
       <div class="spacer-3"></div>
-      <div class="mycart-container">
+      <div class="mycart-container grid-50-50">
         <div class="mycart-items-container">
-          <div class="card card-horizontal">
+          <!-- Product 1 -->
+          <div class="card card-horizontal my-cart-card">
             <div class="image-container">
               <img
                 alt="Reebok Resistant Tube"
@@ -106,18 +107,83 @@
                     >&#8377;300
                   </span>
                 </p>
-                <p
-                  class="text-badge text-badge-rounded-border text-badge-medium discount-percent-horizontal"
+                <div class="margin-vertical-sm"></div>
+                <span
+                  class="text-badge text-badge-rounded-border text-badge-medium"
                 >
                   11 % off
-                </p>
+                </span>
+                <div class="margin-vertical-sm"></div>
+                <div class="quantity-btn-container">
+                  <button class="quantity-btn">
+                    <i class="fa fa-minus-square" aria-hidden="true"></i>
+                  </button>
+                  <span class="quantity-info">1</span>
+                  <button class="quantity-btn">
+                    <i class="fa fa-plus-square" aria-hidden="true"></i>
+                  </button>
+                </div>
               </div>
-              <div class="btn-container">
-                <button class="button button-primary">
+
+              <div class="btn-container my-cart-cta-btn-container">
+                <button class="button button-primary my-cart-cta-btn">
                   <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
                   Remove From Cart
                 </button>
-                <button class="button button-outline-secondary">
+                <button class="button button-outline-secondary my-cart-cta-btn">
+                  Move to Wishlist
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Product 1 -->
+
+          <div class="card card-horizontal my-cart-card">
+            <div class="image-container">
+              <img
+                alt="Reebok Resistant Tube"
+                src="https://cdn.shopify.com/s/files/1/0610/2882/7370/products/product38.jpg?v=1636690872"
+                class="img-responsive"
+              />
+            </div>
+            <div class="wrapper">
+              <div class="text-container">
+                <h5
+                  class="font-medium-large weight-semi-bold primary-text-color"
+                >
+                  Reebok Resistant Tube
+                </h5>
+                <p class="font-large weight-semi-bold primary-text-color">
+                  &#8377;200
+                  <span
+                    class="font-medium weight-semi-bold strike-through secondary-text-color"
+                    >&#8377;300
+                  </span>
+                </p>
+                <div class="margin-vertical-sm"></div>
+                <span
+                  class="text-badge text-badge-rounded-border text-badge-medium"
+                >
+                  11 % off
+                </span>
+                <div class="margin-vertical-sm"></div>
+                <div class="quantity-btn-container">
+                  <button class="quantity-btn">
+                    <i class="fa fa-minus-square" aria-hidden="true"></i>
+                  </button>
+                  <span class="quantity-info">1</span>
+                  <button class="quantity-btn">
+                    <i class="fa fa-plus-square" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="spacer-1"></div>
+              <div class="btn-container my-cart-cta-btn-container">
+                <button class="button button-primary my-cart-cta-btn">
+                  <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                  Remove From Cart
+                </button>
+                <button class="button button-outline-secondary my-cart-cta-btn">
                   Move to Wishlist
                 </button>
               </div>
