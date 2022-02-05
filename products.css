@@ -1,8 +1,7 @@
 .products-section{
     display: grid;
-    grid-template-columns: 300px auto;
+    grid-template-columns: 19rem auto;
     position: relative;
-    /* min-height: 90vh; */
     margin: 0rem 0rem 0rem 0rem;
 }
 .sidebar{
@@ -21,7 +20,7 @@
     gap: 3rem;
 }
 .card-vertical .image-container img{
-    max-height: 280px;
+    max-height: 17.5rem;
 }
 .filters{
     color: white;
@@ -40,7 +39,6 @@
 }
 .filter-heading span{
     cursor: pointer;
-    /* text-decoration: underline; */
 }
 .filter-heading span:hover{
     font-weight: 500;
