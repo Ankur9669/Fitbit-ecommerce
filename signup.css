@@ -4,7 +4,7 @@
     background-color: var(--light-blue);
     border-radius: 8px;
     width: 90%;
-    max-width: 1500px;
+    max-width: 93.75rem;
     margin: 0rem auto;
     padding: 5rem 1rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -47,7 +47,7 @@
 }
 .authentication-form{
     background-color: white;
-    max-width: 500px;
+    max-width: 31.25rem;
     width: 100%;
     border-radius: 6px;
     padding: 1rem 0.5rem;
