@@ -81,7 +81,7 @@
     <main>
       <img src="images/blob.svg" class="blob blob1" />
       <img src="images/blob.svg" class="blob blob2" />
-      <div class="signup login">
+      <div class="authentication login">
         <div class="authentication-image-container">
           <img src="images/login.svg" alt="login-image" />
         </div>
@@ -96,11 +96,19 @@
               LOGIN INTO YOUR ACCOUNT
             </p>
             <div class="form-input-box">
-              <input type="email" placeholder="Email Address" />
-              <i class="fa fa-envelope-o" aria-hidden="true" class=""></i>
+              <input
+                type="email"
+                placeholder="Email Address"
+                class="font-medium"
+              />
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
             </div>
             <div class="form-input-box">
-              <input type="password" placeholder="Password" />
+              <input
+                type="password"
+                placeholder="Password"
+                class="font-medium"
+              />
               <i class="fa fa-eye" aria-hidden="true"></i>
             </div>
             <div class="checkbox-container">
@@ -110,9 +118,12 @@
                   >Remember Me</label
                 >
               </span>
-              <button class="forgot-password-btn font-medium">
+              <a
+                class="forgot-password-btn font-medium"
+                href="forgotpassword.html"
+              >
                 Forgot Password
-              </button>
+              </a>
             </div>
             <button class="button button-primary form-cta-button">Login</button>
             <a
