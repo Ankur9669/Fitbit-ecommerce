@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 19rem auto;
     position: relative;
-    margin: 0rem 0rem 0rem 0rem;
+    margin: 0rem;
 }
 .sidebar{
     position: absolute;
@@ -19,9 +19,9 @@
     flex-wrap: wrap;
     gap: 3rem;
 }
-.card-vertical .image-container img{
+/* .card-vertical .image-container img{
     max-height: 17.5rem;
-}
+} */
 .filters{
     color: white;
     margin: 2.5rem 1rem 0rem 1rem;
@@ -42,4 +42,9 @@
 }
 .filter-heading span:hover{
     font-weight: 500;
+}
+@media only screen and (max-width: 800px){
+    .products-container{
+        grid-column: 1 / 3;
+    }
 }
