@@ -1,312 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FITBIT</title>
 
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="common.css" />
-    <link
-      rel="stylesheet"
-      href="path/to/font-awesome/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FITBIT</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="common.css" />
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
 
-    <link
-      rel="stylesheet"
-      href="https://deploy-preview-10--suspicious-sammet-33f1b3.netlify.app/Components/components.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://suspicious-sammet-33f1b3.netlify.app/Components/components.css"
-    />
-  </head>
+  <link rel="stylesheet"
+    href="https://deploy-preview-10--suspicious-sammet-33f1b3.netlify.app/Components/components.css" />
+  <link rel="stylesheet" href="https://suspicious-sammet-33f1b3.netlify.app/Components/components.css" />
 
-  <body>
-    <!--  ******************************** Navbar Start ********************************  -->
-    <nav class="navbar">
-      <div>
-        <img
-          alt="hamburger-icon"
-          src="images/hamburger.svg"
-          class="hamburger-icon"
-          id="hamburger-icon"
-        />
-      </div>
-      <div class="logo-container">
-        <div class="logo">
-          <img class="logo-image" alt="logo-image" src="images/neatUI.svg" />
-          <span class="logo-text">FiT</span>
-          BiT
-        </div>
-      </div>
-      <div class="nav-items-container-end">
-        <div class="login-search-bar-container">
-          <button class="button button-primary">Login</button>
-          <div class="input-box">
-            <input
-              type="text"
-              class="input"
-              value=""
-              onchange="change(this)"
-              required
-            />
-            <label class="input-label">Search</label>
-          </div>
-        </div>
+</head>
 
-        <div class="navbar-icons-container">
-          <div class="badge-container">
-            <i class="fa fa-heart-o" aria-hidden="true"></i>
-            <span class="number-badge number-badge-md">24+</span>
-          </div>
-          <div class="badge-container">
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            <span class="number-badge number-badge-md">24+</span>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!--  ******************************** Navbar End ********************************  -->
-
-    <!--  ******************************** Hero Section Start ********************************  -->
-    <div class="hero-section">
-      <img
-        class="img-responsive"
-        src="https://cdn.shopify.com/s/files/1/0610/2882/7370/files/slideshowV1-bg1.jpg?v=1637316417"
-        alt="hero-image"
-      />
-      <div class="overlay-container">
-        <p class="font-medium-large weight-semi-bold margin-vertical-xs">
-          FITBIT COLLECTION 2022
-        </p>
-        <h1 class="h1 weight-semi-bold primary-text-color margin-vertical-xs">
-          Fitness Club
-        </h1>
-        <button class="button button-primary margin-vertical-lg">
-          Shop now
-        </button>
+<body>
+  <!--  ******************************** Navbar Start ********************************  -->
+  <nav class="navbar">
+    <div>
+      <img alt="hamburger-icon" src="images/hamburger.svg" class="hamburger-icon" id="hamburger-icon" />
+    </div>
+    <div class="logo-container">
+      <div class="logo">
+        <img class="logo-image" alt="logo-image" src="images/neatUI.svg" />
+        <span class="logo-text">FiT</span>
+        BiT
       </div>
     </div>
-    <!--  ******************************** Hero Section End ********************************  -->
-
-    <!--  ******************************** New Arrivals Section Start ********************************  -->
-    <div class="spacer-3"></div>
-    <div class="spacer-3"></div>
-    <h2 class="h3 home-section-heading">New Arrivals</h2>
-    <div class="spacer-3"></div>
-    <section class="new-arrivals-section home-section-width">
-      <!-- Card With text Overlay 1 -->
-      <div class="card card-only-image card-new-arrival">
-        <div class="text-overlay">
-          <div class="text-overlay-text-container">
-            <p class="font-medium-large weight-semi-bold">New Arrival</p>
-            <p class="font-large secondary-text-color weight-semi-bold">
-              JUST FOR YOU
-            </p>
-          </div>
-        </div>
-        <div class="image-container">
-          <img
-            alt="card-image"
-            src="https://cdn.shopify.com/s/files/1/0610/2882/7370/files/banner-v1-img1.jpg?v=1637419106"
-            class="img-responsive"
-            loading="lazy"
-          />
+    <div class="nav-items-container-end">
+      <div class="login-search-bar-container">
+        <button class="button button-primary">Login</button>
+        <div class="input-box">
+          <input type="text" class="input" value="" onchange="change(this)" required />
+          <label class="input-label">Search</label>
         </div>
       </div>
-      <!-- Card With text Overlay 1 -->
 
-      <!-- Card With text Overlay2 -->
-      <div class="card card-only-image card-new-arrival">
-        <div class="text-overlay">
-          <div class="text-overlay-text-container">
-            <p class="font-medium-large weight-semi-bold">New Collection</p>
-            <p class="font-large secondary-text-color weight-semi-bold">
-              JUST FOR YOU
-            </p>
-          </div>
+      <div class="navbar-icons-container">
+        <div class="badge-container">
+          <i class="fa fa-heart-o" aria-hidden="true"></i>
+          <span class="number-badge number-badge-md">24+</span>
         </div>
-        <div class="image-container">
-          <img
-            alt="card-image"
-            src="https://cdn.shopify.com/s/files/1/0610/2882/7370/files/banner-v1-img2.jpg?v=1637420182"
-            class="img-responsive"
-            loading="lazy"
-          />
+        <div class="badge-container">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          <span class="number-badge number-badge-md">24+</span>
         </div>
       </div>
-      <!-- Card With text Overlay2 -->
-    </section>
+    </div>
+  </nav>
+  <!--  ******************************** Navbar End ********************************  -->
 
-    <!--  ******************************** New Arrivals Section End ********************************  -->
+  <!--  ******************************** Hero Section Start ********************************  -->
+  <div class="hero-section">
+    <img class="img-responsive"
+      src="https://cdn.shopify.com/s/files/1/0610/2882/7370/files/slideshowV1-bg1.jpg?v=1637316417" alt="hero-image" />
+    <div class="overlay-container">
+      <p class="font-medium-large weight-semi-bold margin-vertical-xs">
+        FITBIT COLLECTION 2022
+      </p>
+      <h1 class="h1 weight-semi-bold primary-text-color margin-vertical-xs">
+        Fitness Club
+      </h1>
+      <a class="button button-primary margin-vertical-lg" href="products.html">
+        Shop now
+      </a>
+    </div>
+  </div>
+  <!--  ******************************** Hero Section End ********************************  -->
 
-    <!--  ******************************** Featured Products Section Start ********************************  -->
-    <div class="spacer-3"></div>
-    <div class="spacer-3"></div>
-    <h2 class="h3 centered-text home-section-heading">Featured Products</h2>
-    <div class="spacer-3"></div>
-    <section class="featured-products-section home-section-width">
-      <!-- Product One -->
-      <div class="card card-vertical card-hover">
-        <div class="image-container">
-          <img
-            alt="card-image"
-            src="	https://cdn.shopify.com/s/files/1/0610/2882/7370/products/product38.jpg?v=1636690872"
-            class="img-responsive"
-            loading="lazy"
-          />
-        </div>
-        <div class="wrapper">
-          <div class="text-container">
-            <h5
-              class="font-medium-large weight-semi-bold primary-text-color card-vertical-heading"
-            >
-              Reebok Resistant Tube
-              <i
-                class="fa fa-heart card-vertical-like-icon"
-                aria-hidden="true"
-              ></i>
-            </h5>
-            <div class="margin-vertical-xs"></div>
-            <p class="font-medium weight-semi-bold primary-text-color">
-              &#8377;200
-              <span
-                class="font-extra-small weight-semi-bold strike-through secondary-text-color"
-                >&#8377;300
-              </span>
-              <span
-                class="text-badge text-badge-rounded-border text-badge-small discount-percent-horizontal"
-                >11 % off</span
-              >
-            </p>
-          </div>
+  <!--  ******************************** New Arrivals Section Start ********************************  -->
+  <div class="spacer-3"></div>
+  <div class="spacer-3"></div>
+  <h2 class="h3 home-section-heading">New Arrivals</h2>
+  <div class="spacer-3"></div>
+  <section class="new-arrivals-section home-section-width">
+    <!-- Card With text Overlay 1 -->
+    <div class="card card-only-image card-new-arrival">
+      <div class="text-overlay">
+        <div class="text-overlay-text-container">
+          <p class="font-medium-large weight-semi-bold">New Arrival</p>
+          <p class="font-large secondary-text-color weight-semi-bold">
+            JUST FOR YOU
+          </p>
         </div>
       </div>
-      <!-- Product One -->
+      <div class="image-container">
+        <img alt="card-image"
+          src="https://cdn.shopify.com/s/files/1/0610/2882/7370/files/banner-v1-img1.jpg?v=1637419106"
+          class="img-responsive" loading="lazy" />
+      </div>
+    </div>
+    <!-- Card With text Overlay 1 -->
 
-      <!-- Product Two -->
-      <div class="card card-vertical card-hover">
-        <div class="image-container">
-          <img
-            alt="hand-gloves"
-            src="https://cdn.shopify.com/s/files/1/0610/2882/7370/products/product20.jpg?v=1636623455"
-            class="img-responsive"
-            loading="lazy"
-          />
-        </div>
-        <div class="wrapper">
-          <div class="text-container">
-            <h5
-              class="font-medium-large weight-semi-bold primary-text-color card-vertical-heading"
-            >
-              Hand Gloves
-              <i
-                class="fa fa-heart card-vertical-like-icon"
-                aria-hidden="true"
-              ></i>
-            </h5>
-            <div class="margin-vertical-xs"></div>
-            <p class="font-medium weight-semi-bold primary-text-color">
-              &#8377;200
-              <span
-                class="font-extra-small weight-semi-bold strike-through secondary-text-color"
-                >&#8377;300
-              </span>
-              <span
-                class="text-badge text-badge-rounded-border text-badge-small discount-percent-horizontal"
-                >11 % off</span
-              >
-            </p>
-          </div>
+    <!-- Card With text Overlay2 -->
+    <div class="card card-only-image card-new-arrival">
+      <div class="text-overlay">
+        <div class="text-overlay-text-container">
+          <p class="font-medium-large weight-semi-bold">New Collection</p>
+          <p class="font-large secondary-text-color weight-semi-bold">
+            JUST FOR YOU
+          </p>
         </div>
       </div>
-      <!-- Product Two -->
+      <div class="image-container">
+        <img alt="card-image"
+          src="https://cdn.shopify.com/s/files/1/0610/2882/7370/files/banner-v1-img2.jpg?v=1637420182"
+          class="img-responsive" loading="lazy" />
+      </div>
+    </div>
+    <!-- Card With text Overlay2 -->
+  </section>
 
+  <!--  ******************************** New Arrivals Section End ********************************  -->
+
+  <!--  ******************************** Featured Products Section Start ********************************  -->
+  <div class="spacer-3"></div>
+  <div class="spacer-3"></div>
+  <h2 class="h3 centered-text home-section-heading">Featured Products</h2>
+  <div class="spacer-3"></div>
+  <section class="featured-products-section home-section-width">
+    <!-- Product One -->
+    <div class="card card-vertical card-hover">
+      <div class="image-container">
+        <img alt="card-image"
+          src="	https://cdn.shopify.com/s/files/1/0610/2882/7370/products/product38.jpg?v=1636690872"
+          class="img-responsive" loading="lazy" />
+      </div>
+      <div class="wrapper">
+        <div class="text-container">
+          <h5 class="font-medium-large weight-semi-bold primary-text-color card-vertical-heading">
+            Reebok Resistant Tube
+            <i class="fa fa-heart card-vertical-like-icon" aria-hidden="true"></i>
+          </h5>
+          <div class="margin-vertical-xs"></div>
+          <p class="font-medium weight-semi-bold primary-text-color">
+            &#8377;200
+            <span class="font-extra-small weight-semi-bold strike-through secondary-text-color">&#8377;300
+            </span>
+            <span class="text-badge text-badge-rounded-border text-badge-small discount-percent-horizontal">11 %
+              off</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Product One -->
+
+    <!-- Product Two -->
+    <div class="card card-vertical card-hover">
+      <div class="image-container">
+        <img alt="hand-gloves"
+          src="https://cdn.shopify.com/s/files/1/0610/2882/7370/products/product20.jpg?v=1636623455"
+          class="img-responsive" loading="lazy" />
+      </div>
+      <div class="wrapper">
+        <div class="text-container">
+          <h5 class="font-medium-large weight-semi-bold primary-text-color card-vertical-heading">
+            Hand Gloves
+            <i class="fa fa-heart card-vertical-like-icon" aria-hidden="true"></i>
+          </h5>
+          <div class="margin-vertical-xs"></div>
+          <p class="font-medium weight-semi-bold primary-text-color">
+            &#8377;200
+            <span class="font-extra-small weight-semi-bold strike-through secondary-text-color">&#8377;300
+            </span>
+            <span class="text-badge text-badge-rounded-border text-badge-small discount-percent-horizontal">11 %
+              off</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Product Two -->
+
+    <!-- Product Three -->
+    <div class="card card-vertical card-hover">
+      <div class="image-container">
+        <img alt="iron-kettlebell"
+          src="https://cdn.shopify.com/s/files/1/0610/2882/7370/products/product17.jpg?v=1636627241"
+          class="img-responsive" loading="lazy" />
+      </div>
+      <div class="wrapper">
+        <div class="text-container">
+          <h5 class="font-medium-large weight-semi-bold primary-text-color card-vertical-heading">
+            Iron Kettlebell
+            <i class="fa fa-heart card-vertical-like-icon" aria-hidden="true"></i>
+          </h5>
+          <div class="margin-vertical-xs"></div>
+          <p class="font-medium weight-semi-bold primary-text-color">
+            &#8377;519
+            <span class="font-extra-small weight-semi-bold strike-through secondary-text-color">&#8377;1024
+            </span>
+            <span class="text-badge text-badge-rounded-border text-badge-small discount-percent-horizontal">50 %
+              off</span>
+          </p>
+        </div>
+      </div>
       <!-- Product Three -->
-      <div class="card card-vertical card-hover">
-        <div class="image-container">
-          <img
-            alt="iron-kettlebell"
-            src="https://cdn.shopify.com/s/files/1/0610/2882/7370/products/product17.jpg?v=1636627241"
-            class="img-responsive"
-            loading="lazy"
-          />
-        </div>
-        <div class="wrapper">
-          <div class="text-container">
-            <h5
-              class="font-medium-large weight-semi-bold primary-text-color card-vertical-heading"
-            >
-              Iron Kettlebell
-              <i
-                class="fa fa-heart card-vertical-like-icon"
-                aria-hidden="true"
-              ></i>
-            </h5>
-            <div class="margin-vertical-xs"></div>
-            <p class="font-medium weight-semi-bold primary-text-color">
-              &#8377;519
-              <span
-                class="font-extra-small weight-semi-bold strike-through secondary-text-color"
-                >&#8377;1024
-              </span>
-              <span
-                class="text-badge text-badge-rounded-border text-badge-small discount-percent-horizontal"
-                >50 % off</span
-              >
-            </p>
-          </div>
-        </div>
-        <!-- Product Three -->
-      </div>
-    </section>
-    <!--  ******************************** Featured Products Section End ********************************  -->
+    </div>
+  </section>
+  <!--  ******************************** Featured Products Section End ********************************  -->
 
-    <!--  ******************************** Featured Brands Section Start ********************************  -->
-    <div class="spacer-3"></div>
-    <div class="spacer-3"></div>
-    <h2 class="h3 centered-text home-section-heading">Featured Brands</h2>
-    <div class="spacer-3"></div>
-    <section class="home-section-width featured-brands-container">
-      <img
-        alt="helsinki"
-        src="https://cdn.shopify.com/s/files/1/0068/8481/9003/files/abo-02.png?v=1635838337"
-      />
-      <img
-        alt="sterling"
-        src="https://cdn.shopify.com/s/files/1/0068/8481/9003/files/abo-03.png?v=1635838351"
-      />
-      <img
-        alt="laurie reynolds"
-        src="https://cdn.shopify.com/s/files/1/0068/8481/9003/files/abo-04.png?v=1635838374"
-      />
-      <img
-        alt="new york handcrafted"
-        src="https://cdn.shopify.com/s/files/1/0068/8481/9003/files/abo-07.png?v=1635838427"
-      />
-    </section>
-    <!--  ******************************** Featured Brands Section End ********************************  -->
+  <!--  ******************************** Featured Brands Section Start ********************************  -->
+  <div class="spacer-3"></div>
+  <div class="spacer-3"></div>
+  <h2 class="h3 centered-text home-section-heading">Featured Brands</h2>
+  <div class="spacer-3"></div>
+  <section class="home-section-width featured-brands-container">
+    <img alt="helsinki" src="https://cdn.shopify.com/s/files/1/0068/8481/9003/files/abo-02.png?v=1635838337" />
+    <img alt="sterling" src="https://cdn.shopify.com/s/files/1/0068/8481/9003/files/abo-03.png?v=1635838351" />
+    <img alt="laurie reynolds" src="https://cdn.shopify.com/s/files/1/0068/8481/9003/files/abo-04.png?v=1635838374" />
+    <img alt="new york handcrafted"
+      src="https://cdn.shopify.com/s/files/1/0068/8481/9003/files/abo-07.png?v=1635838427" />
+  </section>
+  <!--  ******************************** Featured Brands Section End ********************************  -->
 
-    <!--  ******************************** Footer Start ********************************  -->
-    <div class="spacer-3"></div>
-    <div class="spacer-3"></div>
-    <footer>
-      <p class="font-medium-large">Made with ♥ by Ankur Gupta</p>
-      <div class="footer-icons-container">
-        <i class="fa fa-github" aria-hidden="true"></i>
-        <i class="fa fa-linkedin" aria-hidden="true"></i>
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-      </div>
-      <p class="font-medium-large">&copy;Copyright 2022</p>
-    </footer>
-    <!--  ******************************** Footer End ********************************  -->
-  </body>
+  <!--  ******************************** Footer Start ********************************  -->
+  <div class="spacer-3"></div>
+  <div class="spacer-3"></div>
+  <footer>
+    <p class="font-medium-large">Made with ♥ by Ankur Gupta</p>
+    <div class="footer-icons-container">
+      <i class="fa fa-github" aria-hidden="true"></i>
+      <i class="fa fa-linkedin" aria-hidden="true"></i>
+      <i class="fa fa-twitter" aria-hidden="true"></i>
+    </div>
+    <p class="font-medium-large">&copy;Copyright 2022</p>
+  </footer>
+  <!--  ******************************** Footer End ********************************  -->
+</body>
+
 </html>
