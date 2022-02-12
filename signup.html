@@ -1,146 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FITBIT</title>
 
-    <link
-      rel="stylesheet"
-      href="path/to/font-awesome/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FITBIT</title>
 
-    <link
-      rel="stylesheet"
-      href="https://deploy-preview-10--suspicious-sammet-33f1b3.netlify.app/Components/components.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://suspicious-sammet-33f1b3.netlify.app/Components/components.css"
-    />
-    <link rel="stylesheet" href="common.css" />
-    <link rel="stylesheet" href="signup.css" />
-  </head>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
 
-  <body class="wrapper">
-    <!--  ******************************** Navbar Start ********************************  -->
-    <nav class="navbar">
-      <div>
-        <img
-          alt="hamburger-icon"
-          src="images/hamburger.svg"
-          class="hamburger-icon"
-          id="hamburger-icon"
-        />
+  <link rel="stylesheet"
+    href="https://deploy-preview-10--suspicious-sammet-33f1b3.netlify.app/Components/components.css" />
+  <link rel="stylesheet" href="https://suspicious-sammet-33f1b3.netlify.app/Components/components.css" />
+  <link rel="stylesheet" href="common.css" />
+  <link rel="stylesheet" href="signup.css" />
+</head>
+
+<body class="wrapper">
+  <!--  ******************************** Navbar Start ********************************  -->
+  <nav class="navbar">
+    <div>
+      <img alt="hamburger-icon" src="images/hamburger.svg" class="hamburger-icon" id="hamburger-icon" />
+    </div>
+    <div class="logo-container">
+      <div class="logo">
+        <img class="logo-image" alt="logo-image" src="images/neatUI.svg" />
+        <span class="logo-text">FiT</span>
+        BiT
       </div>
-      <div class="logo-container">
-        <div class="logo">
-          <img class="logo-image" alt="logo-image" src="images/neatUI.svg" />
-          <span class="logo-text">FiT</span>
-          BiT
-        </div>
+    </div>
+    <div class="nav-items-container-end">
+      <div class="login-search-bar-container">
+        <a class="button button-primary" href="login.html">Login</a>
       </div>
-      <div class="nav-items-container-end">
-        <div class="login-search-bar-container">
-          <button class="button button-primary">Login</button>
-          <div class="input-box">
-            <input
-              type="text"
-              class="input"
-              value=""
-              onchange="change(this)"
-              required
-            />
-            <label class="input-label">Search</label>
+    </div>
+  </nav>
+  <!--  ******************************** Navbar End ********************************  -->
+
+  <!--  ******************************** SignUp Container Start ********************************  -->
+  <div class="spacer-3"></div>
+  <main>
+    <img src="images/blob.svg" class="blob blob1" />
+    <img src="images/blob.svg" class="blob blob2" />
+    <div class="signup">
+      <div class="authentication-image-container">
+        <img src="images/signup.svg" alt="signup-image" />
+      </div>
+      <div class="authentication-form-container">
+        <form class="authentication-form">
+          <h2 class="font-large weight-semi-bold authentication-form-heading">
+            <span class="logo-text font-large">FiT</span>BiT
+          </h2>
+          <p class="font-medium-large weight-semi-bold authentication-form-sub-heading">
+            REGISTER WITH US
+          </p>
+          <div class="form-input-box">
+            <input type="email" placeholder="Email Address" />
+            <i class="fa fa-envelope-o" aria-hidden="true" class=""></i>
           </div>
-        </div>
-
-        <div class="navbar-icons-container">
-          <div class="badge-container">
-            <i class="fa fa-heart-o" aria-hidden="true"></i>
-            <span class="number-badge number-badge-md">24+</span>
+          <div class="form-input-box">
+            <input type="password" placeholder="Password" />
+            <i class="fa fa-eye" aria-hidden="true"></i>
           </div>
-          <div class="badge-container">
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            <span class="number-badge number-badge-md">24+</span>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!--  ******************************** Navbar End ********************************  -->
 
-    <!--  ******************************** SignUp Container Start ********************************  -->
-    <div class="spacer-3"></div>
-    <main>
-      <img src="images/blob.svg" class="blob blob1" />
-      <img src="images/blob.svg" class="blob blob2" />
-      <div class="signup">
-        <div class="authentication-image-container">
-          <img src="images/signup.svg" alt="signup-image" />
-        </div>
-        <div class="authentication-form-container">
-          <form class="authentication-form">
-            <h2 class="font-large weight-semi-bold authentication-form-heading">
-              <span class="logo-text font-large">FiT</span>BiT
-            </h2>
-            <p
-              class="font-medium-large weight-semi-bold authentication-form-sub-heading"
-            >
-              REGISTER WITH US
-            </p>
-            <div class="form-input-box">
-              <input type="email" placeholder="Email Address" />
-              <i class="fa fa-envelope-o" aria-hidden="true" class=""></i>
-            </div>
-            <div class="form-input-box">
-              <input type="password" placeholder="Password" />
-              <i class="fa fa-eye" aria-hidden="true"></i>
-            </div>
-            <div class="checkbox-container">
-              <span>
-                <input type="checkbox" value="Remember Box" />
-                <label for="Remember Box" class="font-medium"
-                  >Remember Me</label
-                >
-              </span>
-              <button class="forgot-password-btn font-medium">
-                Forgot Password
-              </button>
-            </div>
-            <button class="button button-primary form-cta-button">
-              Create New Account
-            </button>
-            <a
-              class="button button-outline-primary form-cta-button"
-              href="login.html"
-            >
-              Already have an account!!!
-            </a>
-          </form>
-        </div>
+          <button class="button button-primary form-cta-button">
+            Create New Account
+          </button>
+          <a class="button button-outline-primary form-cta-button" href="login.html">
+            Already have an account!!!
+          </a>
+        </form>
       </div>
-    </main>
-    <div class="spacer-3"></div>
-    <!--  ******************************** Signup Container End ********************************  -->
+    </div>
+  </main>
+  <div class="spacer-3"></div>
+  <!--  ******************************** Signup Container End ********************************  -->
 
-    <!--  ******************************** Footer Start ********************************  -->
+  <!--  ******************************** Footer Start ********************************  -->
 
-    <footer>
-      <p class="font-medium-large">Made with ♥ by Ankur Gupta</p>
-      <div class="footer-icons-container">
-        <i class="fa fa-github" aria-hidden="true"></i>
-        <i class="fa fa-linkedin" aria-hidden="true"></i>
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-      </div>
-      <p class="font-medium-large">&copy;Copyright 2022</p>
-    </footer>
-    <!--  ******************************** Footer End ********************************  -->
-  </body>
+  <footer>
+    <p class="font-medium-large">Made with ♥ by Ankur Gupta</p>
+    <div class="footer-icons-container">
+      <i class="fa fa-github" aria-hidden="true"></i>
+      <i class="fa fa-linkedin" aria-hidden="true"></i>
+      <i class="fa fa-twitter" aria-hidden="true"></i>
+    </div>
+    <p class="font-medium-large">&copy;Copyright 2022</p>
+  </footer>
+  <!--  ******************************** Footer End ********************************  -->
+</body>
+
 </html>
