@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-
 body{
     background-color: var(--background-color);
     font-family: poppins;
@@ -38,4 +37,12 @@ footer{
 }
 .footer-icons-container i:hover{
     transform: scale(1.1);
+}
+@media only screen and (max-width: 345px){
+    .card-vertical{
+        margin: 0rem 2rem;
+    }
+    .card-vertical .image-container {
+        height: fit-content;
+    }
 }
