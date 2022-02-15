@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
 
-
   <link rel="stylesheet" href="https://suspicious-sammet-33f1b3.netlify.app/Components/components.css" />
   <link rel="stylesheet" href="common.css" />
   <link rel="stylesheet" href="signup.css" />
@@ -32,22 +31,7 @@
     </div>
     <div class="nav-items-container-end">
       <div class="login-search-bar-container">
-        <button class="button button-primary">Login</button>
-        <div class="input-box">
-          <input type="text" class="input" value="" onchange="change(this)" required />
-          <label class="input-label">Search</label>
-        </div>
-      </div>
-
-      <div class="navbar-icons-container">
-        <div class="badge-container">
-          <i class="fa fa-heart-o" aria-hidden="true"></i>
-          <span class="number-badge number-badge-md">24+</span>
-        </div>
-        <div class="badge-container">
-          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-          <span class="number-badge number-badge-md">24+</span>
-        </div>
+        <a href="signup.html" class="button button-primary">SignUp</a>
       </div>
     </div>
   </nav>
@@ -56,9 +40,9 @@
   <!--  ******************************** SignUp Container Start ********************************  -->
   <div class="spacer-3"></div>
   <main>
-    <img src="images/blob.svg" class="blob blob1" />
-    <img src="images/blob.svg" class="blob blob2" />
-    <div class="authentication login">
+    <img src="images/blob.svg" class="blob blob1" alt="top-left-blob" />
+    <img src="images/blob.svg" class="blob blob2" alt="bottom-right-blob" />
+    <div class="signup login">
       <div class="authentication-image-container">
         <img src="images/login.svg" alt="login-image" />
       </div>
@@ -71,11 +55,11 @@
             LOGIN INTO YOUR ACCOUNT
           </p>
           <div class="form-input-box">
-            <input type="email" placeholder="Email Address" class="font-medium" />
-            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <input type="email" placeholder="Email Address" />
+            <i class="fa fa-envelope-o" aria-hidden="true" class=""></i>
           </div>
           <div class="form-input-box">
-            <input type="password" placeholder="Password" class="font-medium" />
+            <input type="password" placeholder="Password" />
             <i class="fa fa-eye" aria-hidden="true"></i>
           </div>
           <div class="checkbox-container">
@@ -83,9 +67,9 @@
               <input type="checkbox" value="Remember Box" id="remember-box" />
               <label for="remember-box" class="font-medium">Remember Me</label>
             </span>
-            <a class="forgot-password-btn font-medium" href="forgotpassword.html">
+            <button class="forgot-password-btn font-medium">
               Forgot Password
-            </a>
+            </button>
           </div>
           <button class="button button-primary form-cta-button">Login</button>
           <a class="button button-outline-primary form-cta-button" href="signup.html">
