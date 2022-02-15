@@ -7,6 +7,10 @@ body{
     max-width: 2000px;
     margin: auto;
 }
+:root{
+    --light-blue: #f2fbff;
+    --color-black: black;
+}
 *{
     box-sizing: border-box;
     margin: 0;
