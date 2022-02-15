@@ -1,87 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FITBIT</title>
 
-    <link
-      rel="stylesheet"
-      href="path/to/font-awesome/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FITBIT</title>
 
-    <link
-      rel="stylesheet"
-      href="https://deploy-preview-10--suspicious-sammet-33f1b3.netlify.app/Components/components.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://suspicious-sammet-33f1b3.netlify.app/Components/components.css"
-    />
-    <link rel="stylesheet" href="products.css" />
-    <link rel="stylesheet" href="common.css" />
-    <link rel="stylesheet" href="mycart.css" />
-  </head>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
 
-  <body>
-    <!--  ******************************** Navbar Start ********************************  -->
-    <nav class="navbar">
-      <div>
-        <img
-          alt="hamburger-icon"
-          src="images/hamburger.svg"
-          class="hamburger-icon"
-          id="hamburger-icon"
-        />
+  <link rel="stylesheet" href="https://suspicious-sammet-33f1b3.netlify.app/Components/components.css" />
+  <link rel="stylesheet" href="products.css" />
+  <link rel="stylesheet" href="common.css" />
+  <link rel="stylesheet" href="mycart.css" />
+</head>
+
+<body>
+  <!--  ******************************** Navbar Start ********************************  -->
+  <nav class="navbar">
+    <div>
+      <img alt="hamburger-icon" src="images/hamburger.svg" class="hamburger-icon" id="hamburger-icon" />
+    </div>
+    <div class="logo-container">
+      <div class="logo">
+        <img class="logo-image" alt="logo-image" src="images/neatUI.svg" />
+        <span class="logo-text">FiT</span>
+        BiT
       </div>
-      <div class="logo-container">
-        <div class="logo">
-          <img class="logo-image" alt="logo-image" src="images/neatUI.svg" />
-          <span class="logo-text">FiT</span>
-          BiT
+    </div>
+    <div class="nav-items-container-end">
+      <div class="login-search-bar-container">
+
+        <div class="input-box">
+          <input type="text" class="input" value="" onchange="change(this)" required />
+          <label class="input-label">Search</label>
         </div>
       </div>
-      <div class="nav-items-container-end">
-        <div class="login-search-bar-container">
-          <button class="button button-primary">Login</button>
-          <div class="input-box">
-            <input
-              type="text"
-              class="input"
-              value=""
-              onchange="change(this)"
-              required
-            />
-            <label class="input-label">Search</label>
-          </div>
-        </div>
 
-        <div class="navbar-icons-container">
+      <div class="navbar-icons-container">
+        <a href="wishlist.html">
           <div class="badge-container">
             <i class="fa fa-heart-o" aria-hidden="true"></i>
             <span class="number-badge number-badge-md">24+</span>
           </div>
+        </a>
+        <a href="mycart.html">
           <div class="badge-container">
             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
             <span class="number-badge number-badge-md">24+</span>
           </div>
-        </div>
+        </a>
       </div>
-    </nav>
-    <!--  ******************************** Navbar End ********************************  -->
+    </div>
+  </nav>
+  <!--  ******************************** Navbar End ********************************  -->
 
-    <!--  ******************************** Wishlist Items Container Start ********************************  -->
+  <!--  ******************************** Wishlist Items Container Start ********************************  -->
+  <div class="spacer-3"></div>
+  <main class="mycart">
+    <h3 class="h2 centered-text">My Cart</h3>
     <div class="spacer-3"></div>
-    <main class="mycart">
-      <h3 class="h2 centered-text">My Cart</h3>
-      <div class="spacer-3"></div>
       <div class="mycart-container grid-50-50">
         <div class="mycart-items-container">
           <!-- Product 1 Start -->
@@ -185,82 +165,84 @@
                 </button>
                 <button class="button button-outline-secondary my-cart-cta-btn">
                   Move to Wishlist
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="mycart-summary-container">
-          <!-- Card Vertical without dismiss -->
-          <div class="card card-vertical price-details-card">
-            <div class="wrapper">
-              <div class="text-container">
-                <h5
-                  class="font-medium-large weight-semi-bold primary-text-color price-details-card-heading margin-vertical-sm"
-                >
-                  Price Details
-                </h5>
-                <div class="price-details-section">
-                  <div
-                    class="font-medium weight-normal primary-text-color price-details-item margin-vertical-sm"
-                  >
-                    <span>Price (2 Items)</span>
-                    <span>&#8377;2000</span>
-                  </div>
-                  <div
-                    class="font-medium weight-normal primary-text-color price-details-item margin-vertical-sm"
-                  >
-                    <span>Discount</span>
-                    <span>-&#8377;180</span>
-                  </div>
-                  <div
-                    class="font-medium weight-normal primary-text-color price-details-item margin-vertical-sm"
-                  >
-                    <span>Delivary Charges</span>
-                    <span>&#8377;40</span>
-                  </div>
-                </div>
-                <div class="price-details-section">
-                  <div
-                    class="font-medium weight-semi-bold primary-text-color price-details-item margin-vertical-sm"
-                  >
-                    <span>TOTAL AMOUNT</span>
-                    <span>&#8377;1860</span>
-                  </div>
-                </div>
-                <div class="price-details-section">
-                  <p
-                    class="font-medium weight-semi-bold primary-text-color price-details-item margin-vertical-sm"
-                  >
-                    You will save ₹1999 on this order
-                  </p>
-                </div>
-              </div>
-              <div class="btn-container">
-                <button class="button button-primary">
-                  <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
-                  Buy Now
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <div class="spacer-3"></div>
-    <!--  ******************************** Wishlist Items Container End ********************************  -->
 
-    <!--  ******************************** Footer Start ********************************  -->
-    <div class="spacer-3"></div>
-    <footer>
-      <p class="font-medium-large">Made with ♥ by Ankur Gupta</p>
-      <div class="footer-icons-container">
-        <i class="fa fa-github" aria-hidden="true"></i>
-        <i class="fa fa-linkedin" aria-hidden="true"></i>
-        <i class="fa fa-twitter" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <div class="spacer-1"></div>
+            <div class="btn-container my-cart-cta-btn-container">
+              <button class="button button-primary my-cart-cta-btn">
+                <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                Remove From Cart
+              </button>
+              <button class="button button-outline-secondary my-cart-cta-btn">
+                Move to Wishlist
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-      <p class="font-medium-large">&copy;Copyright 2022</p>
-    </footer>
-    <!--  ******************************** Footer End ********************************  -->
-  </body>
+      <div class="mycart-summary-container">
+        <!-- Card Vertical without dismiss -->
+        <div class="card card-vertical price-details-card">
+          <div class="wrapper">
+            <div class="text-container">
+              <h5
+                class="font-medium-large weight-semi-bold primary-text-color price-details-card-heading margin-vertical-sm">
+                Price Details
+              </h5>
+              <div class="price-details-section">
+                <div class="font-medium weight-normal primary-text-color price-details-item margin-vertical-sm">
+                  <span>Price (2 Items)</span>
+                  <span>&#8377;2000</span>
+                </div>
+                <div class="font-medium weight-normal primary-text-color price-details-item margin-vertical-sm">
+                  <span>Discount</span>
+                  <span>-&#8377;180</span>
+                </div>
+                <div class="font-medium weight-normal primary-text-color price-details-item margin-vertical-sm">
+                  <span>Delivary Charges</span>
+                  <span>&#8377;40</span>
+                </div>
+              </div>
+              <div class="price-details-section">
+                <div class="font-medium weight-semi-bold primary-text-color price-details-item margin-vertical-sm">
+                  <span>TOTAL AMOUNT</span>
+                  <span>&#8377;1860</span>
+                </div>
+              </div>
+              <div class="price-details-section">
+                <p class="font-medium weight-semi-bold primary-text-color price-details-item margin-vertical-sm">
+                  You will save ₹1999 on this order
+                </p>
+              </div>
+            </div>
+            <div class="btn-container">
+              <button class="button button-primary">
+                <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="spacer-3"></div>
+  <!--  ******************************** Wishlist Items Container End ********************************  -->
+
+  <!--  ******************************** Footer Start ********************************  -->
+  <div class="spacer-3"></div>
+  <footer>
+    <p class="font-medium-large">Made with ♥ by Ankur Gupta</p>
+    <div class="footer-icons-container">
+      <i class="fa fa-github" aria-hidden="true"></i>
+      <i class="fa fa-linkedin" aria-hidden="true"></i>
+      <i class="fa fa-twitter" aria-hidden="true"></i>
+    </div>
+    <p class="font-medium-large">&copy;Copyright 2022</p>
+  </footer>
+  <!--  ******************************** Footer End ********************************  -->
+</body>
+
 </html>
