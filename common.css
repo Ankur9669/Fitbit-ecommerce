@@ -9,6 +9,7 @@ body{
 }
 :root{
     --light-blue: #f2fbff;
+    --color-black: black;
 }
 *{
     box-sizing: border-box;
