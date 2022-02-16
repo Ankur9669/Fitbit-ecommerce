@@ -32,25 +32,7 @@
 .my-cart-card .wrapper{
     margin: 1rem 1rem;
 }
-.quantity-btn-container{
-    display: flex;
-    align-items: center;
-    margin: 1rem 0rem;
-}
-.quantity-btn{
-    cursor: pointer;
-    background-color: transparent;
-}
-.quantity-info{
-    display: inline-block;
-    border: 1px solid gray;
-    font-size: 1.3rem;
-    padding: 0.1rem 1rem;
-    margin: 0rem 0.5rem;
-}
-.quantity-btn i{
-    font-size: 2rem;
-}
+
 .my-cart-cta-btn-container{
     max-width: 32rem;
     width: 100%;    
