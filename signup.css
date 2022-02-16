@@ -1,4 +1,4 @@
-.signup{
+.authentication{
     display: grid;
     grid-template-columns: 50% 50%;
     background-color: var(--light-blue);
@@ -111,8 +111,11 @@
 .login{
     padding: 0rem;
 }
+.forgot-password{
+    padding: 0rem;
+}
 @media only screen and (max-width: 1024px){
-    .signup{
+    .authentication{
         grid-template-columns: 100%;
         grid-template-rows: auto;
     }

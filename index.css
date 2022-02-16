@@ -89,8 +89,8 @@
     justify-content: space-evenly;
 }
 .featured-brands-container img{
-    width: 300px;
-    height: 180px;
+    width: 18.75rem;
+    height: 11.25rem;
     object-fit: cover;
 }
 @media only screen and (max-width: 960px){
