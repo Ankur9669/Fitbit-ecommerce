@@ -10,7 +10,7 @@ body{
 :root{
     --light-blue: #f2fbff;
     --color-black: #000000;
-    --color-gray: gray;
+    --color-white: #ffffff;
     --navbar-shadow: #b5b5b5;
 }
 *{
@@ -24,6 +24,7 @@ ul{
 .navbar{
     box-shadow: 0px 5px 3px 0px var(--navbar-shadow);
 }
+
 .quantity-btn-container{
     display: flex;
     align-items: center;
@@ -51,7 +52,7 @@ footer{
     background-color: var(--primary-color);
     width: 100%;
     min-height: 12.5rem;
-    color: white;
+    color: var(--color-white);
 }
 .footer-icons-container{
     display: flex;
