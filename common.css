@@ -9,7 +9,7 @@ body{
 }
 :root{
     --light-blue: #f2fbff;
-    --color-black: black;
+    --color-black: #000000;
     --color-gray: gray;
     --navbar-shadow: #b5b5b5;
 }
@@ -27,7 +27,7 @@ ul{
 .quantity-btn-container{
     display: flex;
     align-items: center;
-    margin: 1rem 0rem;
+    margin: 1rem 0;
 }
 .quantity-btn{
     cursor: pointer;
@@ -35,10 +35,10 @@ ul{
 }
 .quantity-info{
     display: inline-block;
-    border: 1px solid gray;
+    border: 1px solid var(--color-gray);
     font-size: 1.3rem;
-    padding: 0.1rem 1rem;
-    margin: 0rem 0.5rem;
+    padding: 2px 1rem;
+    margin: 0 0.5rem;
 }
 .quantity-btn i{
     font-size: 2rem;
@@ -57,7 +57,7 @@ footer{
     display: flex;
     justify-content: space-around;
     width: 16rem;
-    margin: 1rem 0rem;
+    margin: 1rem 0;
 }
 .footer-icons-container i{
     font-size: 2.5rem;
@@ -68,7 +68,7 @@ footer{
 }
 @media only screen and (max-width: 345px){
     .card-vertical{
-        margin: 0rem 2rem;
+        margin: 0 2rem;
     }
     .card-vertical .image-container {
         height: fit-content;
