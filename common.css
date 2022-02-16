@@ -10,6 +10,7 @@ body{
 :root{
     --light-blue: #f2fbff;
     --color-black: black;
+    --color-gray: gray;
     --navbar-shadow: #b5b5b5;
 }
 *{
@@ -22,6 +23,25 @@ ul{
 }
 .navbar{
     box-shadow: 0px 5px 3px 0px var(--navbar-shadow);
+}
+.quantity-btn-container{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0rem;
+}
+.quantity-btn{
+    cursor: pointer;
+    background-color: transparent;
+}
+.quantity-info{
+    display: inline-block;
+    border: 1px solid gray;
+    font-size: 1.3rem;
+    padding: 0.1rem 1rem;
+    margin: 0rem 0.5rem;
+}
+.quantity-btn i{
+    font-size: 2rem;
 }
 footer{
     display: flex;

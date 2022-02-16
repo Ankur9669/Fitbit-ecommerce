@@ -1,0 +1,29 @@
+.single-product-page{
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* I have to use this to override the css coming from component library */
+.card-horizontal .text-container :nth-child(4) {
+    margin: 0rem;
+}
+.card-horizontal{
+
+}
+.text-badge{
+    display: inline-block;
+}
+.rating-bar{
+    display: flex;
+    align-items: center;
+}
+.rating-bar i{
+    font-size: 1.3rem;
+}
+.rating-bar .colored-star{
+    color: var(--dark-yellow);
+}
+.rating-bar .uncolored-star{
+    color: var(--color-gray);
+}
