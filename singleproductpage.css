@@ -9,7 +9,11 @@
     margin: 0rem;
 }
 .card-horizontal{
-
+    max-width: 55rem;
+    margin: 2rem 2rem;
+}
+.card-horizontal .image-container {
+    width: 25rem;
 }
 .text-badge{
     display: inline-block;
@@ -26,4 +30,27 @@
 }
 .rating-bar .uncolored-star{
     color: var(--color-gray);
+}
+@media only screen and (max-width: 900px){
+    .card-horizontal .image-container {
+        width: 18rem;
+    }
+}
+@media only screen and (max-width: 800px){
+    .card-horizontal  {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        max-width: 30rem;
+    }
+    .card-horizontal .image-container {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        width: 100%;
+        
+    }
+    .card-horizontal .wrapper{
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+        margin: 1rem 1rem 1rem 0rem;
+    }
 }
