@@ -108,6 +108,9 @@
     border-radius: 3px;
     text-align: center;
 }
+.login{
+    padding: 0rem;
+}
 @media only screen and (max-width: 1024px){
     .signup{
         grid-template-columns: 100%;
