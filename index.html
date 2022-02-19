@@ -13,18 +13,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
 
-  <link rel="stylesheet"
-    href="https://deploy-preview-10--suspicious-sammet-33f1b3.netlify.app/Components/components.css" />
   <link rel="stylesheet" href="https://suspicious-sammet-33f1b3.netlify.app/Components/components.css" />
 </head>
 
 <body>
   <!--  ******************************** Navbar Start ********************************  -->
   <nav class="navbar">
-    <div>
+    <div aria-label="menu-icon">
       <img alt="hamburger-icon" src="images/hamburger.svg" class="hamburger-icon" id="hamburger-icon" />
     </div>
-    <div class="logo-container">
+    <div class="logo-container" aria-label="fitbit-logo">
       <div class="logo">
         <img class="logo-image" alt="logo-image" src="images/neatUI.svg" />
         <span class="logo-text">FiT</span>
@@ -33,35 +31,29 @@
     </div>
     <div class="nav-items-container-end">
       <div class="login-search-bar-container">
-        <button class="button button-primary">Login</button>
-        <div class="input-box">
+        <a href="login.html" class="button button-primary">Login</a>
+        <div class="input-box" aria-label="search-box">
           <input type="text" class="input" value="" onchange="change(this)" required />
           <label class="input-label">Search</label>
         </div>
       </div>
 
       <div class="navbar-icons-container">
-        <a href="wishlist.html">
-          <div class="badge-container">
-            <i class="fa fa-heart-o" aria-hidden="true"></i>
-            <span class="number-badge number-badge-md">24+</span>
-          </div>
+        <a href="wishlist.html" class="badge-container">
+          <i class="fa fa-heart-o" aria-hidden="true"></i>
+          <span class="number-badge number-badge-md">24+</span>
         </a>
-
-        <a href="mycart.html">
-          <div class="badge-container">
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            <span class="number-badge number-badge-md">24+</span>
-          </div>
+        <a href="mycart.html" class="badge-container">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          <span class="number-badge number-badge-md">24+</span>
         </a>
-
       </div>
     </div>
   </nav>
   <!--  ******************************** Navbar End ********************************  -->
 
   <!--  ******************************** Hero Section Start ********************************  -->
-  <div class="hero-section">
+  <section class="hero-section">
     <img class="img-responsive"
       src="https://cdn.shopify.com/s/files/1/0610/2882/7370/files/slideshowV1-bg1.jpg?v=1637316417" alt="hero-image" />
     <div class="overlay-container">
@@ -71,13 +63,12 @@
       <h1 class="h1 weight-semi-bold primary-text-color margin-vertical-xs">
         Fitness Club
       </h1>
-      <a class="button button-primary margin-vertical-lg" href="products.html">
+      <a href="products.html" class="button button-primary shop-btn">
         Shop now
       </a>
     </div>
-  </div>
+  </section>
   <!--  ******************************** Hero Section End ********************************  -->
-
 
   <!--  ******************************** New Arrivals Section Start ********************************  -->
   <div class="spacer-3"></div>
@@ -86,7 +77,7 @@
   <div class="spacer-3"></div>
   <section class="new-arrivals-section home-section-width">
     <!-- Card With text Overlay 1 -->
-    <div class="card card-only-image card-new-arrival">
+    <a href="products.html" class="card card-only-image card-new-arrival">
       <div class="text-overlay">
         <div class="text-overlay-text-container">
           <p class="font-medium-large weight-semi-bold">New Arrival</p>
@@ -100,11 +91,11 @@
           src="https://cdn.shopify.com/s/files/1/0610/2882/7370/files/banner-v1-img1.jpg?v=1637419106"
           class="img-responsive" loading="lazy" />
       </div>
-    </div>
+    </a>
     <!-- Card With text Overlay 1 -->
 
     <!-- Card With text Overlay2 -->
-    <div class="card card-only-image card-new-arrival">
+    <a href="products.html" class="card card-only-image card-new-arrival">
       <div class="text-overlay">
         <div class="text-overlay-text-container">
           <p class="font-medium-large weight-semi-bold">New Collection</p>
@@ -118,7 +109,7 @@
           src="https://cdn.shopify.com/s/files/1/0610/2882/7370/files/banner-v1-img2.jpg?v=1637420182"
           class="img-responsive" loading="lazy" />
       </div>
-    </div>
+    </a>
     <!-- Card With text Overlay2 -->
   </section>
 
@@ -131,7 +122,7 @@
   <div class="spacer-3"></div>
   <section class="featured-products-section home-section-width">
     <!-- Product One -->
-    <div class="card card-vertical card-hover">
+    <a href="singleproduct.html" class="card card-vertical card-hover">
       <div class="image-container">
         <img alt="card-image"
           src="	https://cdn.shopify.com/s/files/1/0610/2882/7370/products/product38.jpg?v=1636690872"
@@ -153,11 +144,11 @@
           </p>
         </div>
       </div>
-    </div>
+    </a>
     <!-- Product One -->
 
     <!-- Product Two -->
-    <div class="card card-vertical card-hover">
+    <a href="singleproduct.html" class="card card-vertical card-hover">
       <div class="image-container">
         <img alt="hand-gloves"
           src="https://cdn.shopify.com/s/files/1/0610/2882/7370/products/product20.jpg?v=1636623455"
@@ -179,11 +170,11 @@
           </p>
         </div>
       </div>
-    </div>
+    </a>
     <!-- Product Two -->
 
     <!-- Product Three -->
-    <div class="card card-vertical card-hover">
+    <a href="singleproduct.html" class="card card-vertical card-hover">
       <div class="image-container">
         <img alt="iron-kettlebell"
           src="https://cdn.shopify.com/s/files/1/0610/2882/7370/products/product17.jpg?v=1636627241"
@@ -205,8 +196,8 @@
           </p>
         </div>
       </div>
-      <!-- Product Three -->
-    </div>
+    </a>
+    <!-- Product Three -->
   </section>
   <!--  ******************************** Featured Products Section End ********************************  -->
 
@@ -230,9 +221,15 @@
   <footer>
     <p class="font-medium-large">Made with ♥ by Ankur Gupta</p>
     <div class="footer-icons-container">
-      <i class="fa fa-github" aria-hidden="true"></i>
-      <i class="fa fa-linkedin" aria-hidden="true"></i>
-      <i class="fa fa-twitter" aria-hidden="true"></i>
+      <a href="#">
+        <i class="fa fa-github footer-icon" aria-hidden="true"></i>
+      </a>
+      <a href="#">
+        <i class="fa fa-linkedin footer-icon" aria-hidden="true"></i>
+      </a>
+      <a href="#">
+        <i class="fa fa-twitter footer-icon" aria-hidden="true"></i>
+      </a>
     </div>
     <p class="font-medium-large">&copy;Copyright 2022</p>
   </footer>
