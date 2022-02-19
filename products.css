@@ -53,6 +53,9 @@
 .card-hover:hover{
     box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
 }
+.card-hover:focus{
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+}
 @media only screen and (max-width: 800px){
     .products-container{
         grid-column: 1 / 3;
