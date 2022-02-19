@@ -67,6 +67,12 @@ footer{
 .footer-icons-container i:hover{
     transform: scale(1.1);
 }
+.inline-block{
+    display: inline-block;
+}
+.inline{
+    display: inline;
+}
 @media only screen and (max-width: 345px){
     .card-vertical{
         margin: 0 2rem;

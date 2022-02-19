@@ -22,15 +22,15 @@
       <img alt="hamburger-icon" src="images/hamburger.svg" class="hamburger-icon" id="hamburger-icon" />
     </div>
     <div class="logo-container">
-      <div class="logo">
+      <a href="index.html" class="logo">
         <img class="logo-image" alt="logo-image" src="images/neatUI.svg" />
         <span class="logo-text">FiT</span>
         BiT
-      </div>
+      </a>
     </div>
     <div class="nav-items-container-end">
       <div class="login-search-bar-container">
-        <button class="button button-primary">Login</button>
+        <a href="login.html" class="button button-primary">Login</a>
         <div class="input-box">
           <input type="text" class="input" value="" onchange="change(this)" required />
           <label class="input-label">Search</label>
@@ -63,23 +63,22 @@
     <!--  ******************************** Sidebar Start ********************************  -->
 
     <aside class="sidebar">
-
       <div class="filters">
         <p class="filter-type weight-semi-bold font-medium-large filter-heading">
           FILTERS
           <span class="weight-normal font-small">CLEAR</span>
         </p>
         <!--  Sort By Filter Start  -->
-        <div class="filter-type">
+        <div class="filter-type" aria-label="filter-type">
           <p class="weight-semi-bold font-medium">SORT BY</p>
           <div class="margin-vertical-lg"></div>
           <ul class="list-style-none filter-list">
             <li>
-              <input type="radio" name="sort-by" value="price-low-to-high" />
-              <label for="price-high-to-low">Price low to high</label>
+              <input type="radio" name="sort-by" value="price-low-to-high" id="price-low-to-high" />
+              <label for="price-low-to-high">Price low to high</label>
             </li>
             <li>
-              <input type="radio" name="sort-by" value="price-high-to-low" />
+              <input type="radio" name="sort-by" value="price-high-to-low" id="price-high-to-low" />
               <label for="price-high-to-low">Price high to low</label>
             </li>
           </ul>
@@ -87,24 +86,24 @@
         <!--  Sort By Filter End  -->
 
         <!--  Categories Filter Start  -->
-        <div class="filter-type">
+        <div class="filter-type" aria-label="filter-type">
           <p class="weight-semi-bold font-medium">Categories</p>
           <div class="margin-vertical-lg"></div>
           <ul class="list-style-none filter-list">
             <li>
-              <input type="checkbox" name="shoes" />
+              <input type="checkbox" name="shoes" id="shoes" />
               <label for="shoes">Shoes</label>
             </li>
             <li>
-              <input type="checkbox" name="bags" />
+              <input type="checkbox" name="bags" id="bags" />
               <label for="bags">Bags</label>
             </li>
             <li>
-              <input type="checkbox" name="hand-gloves" />
+              <input type="checkbox" name="hand-gloves" id="hand-gloves" />
               <label for="hand-gloves">Hand Gloves</label>
             </li>
             <li>
-              <input type="checkbox" name="dumbells" />
+              <input type="checkbox" name="dumbells" id="dumbells" />
               <label for="dumbells">Dumbells</label>
             </li>
           </ul>
@@ -112,28 +111,28 @@
         <!--  Categories Filter End  -->
 
         <!--  Ratings Filter Start  -->
-        <div class="filter-type">
+        <div class="filter-type" aria-label="filter-type">
           <p class="weight-semi-bold font-medium">Ratings</p>
           <div class="margin-vertical-lg"></div>
           <ul class="list-style-none filter-list">
             <li>
-              <input type="checkbox" name="5-stars" />
+              <input type="checkbox" name="5-stars" id="5-stars" />
               <label for="5-stars">5 Stars</label>
             </li>
             <li>
-              <input type="checkbox" name="4-stars" />
+              <input type="checkbox" name="4-stars" id="4-stars" />
               <label for="4-stars">4 Stars</label>
             </li>
             <li>
-              <input type="checkbox" name="3-stars" />
+              <input type="checkbox" name="3-stars" id="3-stars" />
               <label for="3-stars">3 Stars</label>
             </li>
             <li>
-              <input type="checkbox" name="2-stars" />
+              <input type="checkbox" name="2-stars" id="2-stars" />
               <label for="2-stars">2 Stars</label>
             </li>
             <li>
-              <input type="checkbox" name="1-star" />
+              <input type="checkbox" name="1-star" id="1-star" />
               <label for="1-star">1 Star</label>
             </li>
           </ul>
@@ -161,13 +160,16 @@
               Reebok Resistant Tube
               <i class="fa fa-heart card-vertical-like-icon" aria-hidden="true"></i>
             </h5>
-            <p class="font-medium weight-semi-bold primary-text-color">
-              &#8377;200
-              <span class="font-extra-small weight-semi-bold strike-through secondary-text-color">&#8377;300
-              </span>
-              <span class="text-badge text-badge-rounded-border text-badge-small discount-percent-horizontal">11 %
-                off</span>
-            </p>
+            <div class="price-container">
+              <p class="font-medium inline-block weight-semi-bold primary-text-color">
+                &#8377;200
+              </p>
+              <p class="font-extra-small inline-block weight-semi-bold strike-through secondary-text-color">&#8377;300
+              </p>
+              <p class="text-badge inline-block text-badge-rounded-border text-badge-small discount-percent">
+                11 %
+                off</p>
+            </div>
           </div>
           <div class="btn-container">
             <button class="button button-primary">
@@ -196,13 +198,16 @@
               Hand Gloves
               <i class="fa fa-heart card-vertical-like-icon" aria-hidden="true"></i>
             </h5>
-            <p class="font-medium weight-semi-bold primary-text-color">
-              &#8377;200
-              <span class="font-extra-small weight-semi-bold strike-through secondary-text-color">&#8377;300
-              </span>
-              <span class="text-badge text-badge-rounded-border text-badge-small discount-percent-horizontal">11 %
-                off</span>
-            </p>
+            <div class="price-container">
+              <p class="font-medium inline-block weight-semi-bold primary-text-color">
+                &#8377;200
+              </p>
+              <p class="font-extra-small inline-block weight-semi-bold strike-through secondary-text-color">&#8377;300
+              </p>
+              <p class="text-badge inline-block text-badge-rounded-border text-badge-small discount-percent">
+                11 %
+                off</p>
+            </div>
           </div>
           <div class="btn-container">
             <button class="button button-primary">
@@ -231,13 +236,16 @@
               Iron Kettlebell
               <i class="fa fa-heart card-vertical-like-icon" aria-hidden="true"></i>
             </h5>
-            <p class="font-medium weight-semi-bold primary-text-color">
-              &#8377;200
-              <span class="font-extra-small weight-semi-bold strike-through secondary-text-color">&#8377;300
-              </span>
-              <span class="text-badge text-badge-rounded-border text-badge-small discount-percent-horizontal">11 %
-                off</span>
-            </p>
+            <div class="price-container">
+              <p class="font-medium inline-block weight-semi-bold primary-text-color">
+                &#8377;200
+              </p>
+              <p class="font-extra-small inline-block weight-semi-bold strike-through secondary-text-color">&#8377;300
+              </p>
+              <p class="text-badge inline-block text-badge-rounded-border text-badge-small discount-percent">
+                11 %
+                off</p>
+            </div>
           </div>
           <div class="btn-container">
             <button class="button button-primary">
@@ -265,13 +273,18 @@
               Atomic habits
               <i class="fa fa-heart card-vertical-like-icon" aria-hidden="true"></i>
             </h5>
-            <p class="font-medium weight-semi-bold primary-text-color">
-              &#8377;9999
-              <span class="font-extra-small weight-semi-bold strike-through secondary-text-color">&#8377;13000
-              </span>
-              <span class="text-badge text-badge-rounded-border text-badge-small discount-percent-horizontal">19 %
-                off</span>
-            </p>
+            <div class="price-container">
+              <p class="font-medium inline-block weight-semi-bold primary-text-color">
+                &#8377;9999
+              </p>
+              <p class="font-extra-small inline-block weight-semi-bold strike-through secondary-text-color">&#8377;11300
+              </p>
+              <p class="text-badge inline-block text-badge-rounded-border text-badge-small discount-percent">
+                19 %
+                off
+              </p>
+            </div>
+
           </div>
           <div class="btn-container">
             <button class="button button-primary">
@@ -299,13 +312,17 @@
               Atomic habits
               <i class="fa fa-heart card-vertical-like-icon" aria-hidden="true"></i>
             </h5>
-            <p class="font-medium weight-semi-bold primary-text-color">
-              &#8377;15399
-              <span class="font-extra-small weight-semi-bold strike-through secondary-text-color">&#8377;16544
-              </span>
-              <span class="text-badge text-badge-rounded-border text-badge-small discount-percent-horizontal">23 %
-                off</span>
-            </p>
+            <div class="price-container">
+              <p class="font-medium inline-block weight-semi-bold primary-text-color">
+                &#8377;12349
+              </p>
+              <p class="font-extra-small inline-block weight-semi-bold strike-through secondary-text-color">&#8377;16200
+              </p>
+              <p class="text-badge inline-block text-badge-rounded-border text-badge-small discount-percent">
+                15 %
+                off
+              </p>
+            </div>
           </div>
           <div class="btn-container">
             <button class="button button-primary">
@@ -334,13 +351,17 @@
               Commercial Ellipticals
               <i class="fa fa-heart card-vertical-like-icon" aria-hidden="true"></i>
             </h5>
-            <p class="font-medium weight-semi-bold primary-text-color">
-              &#8377;19359
-              <span class="font-extra-small weight-semi-bold strike-through secondary-text-color">&#8377;23539
-              </span>
-              <span class="text-badge text-badge-rounded-border text-badge-small discount-percent-horizontal">25 %
-                off</span>
-            </p>
+            <div class="price-container">
+              <p class="font-medium inline-block weight-semi-bold primary-text-color">
+                &#8377;12349
+              </p>
+              <p class="font-extra-small inline-block weight-semi-bold strike-through secondary-text-color">&#8377;16200
+              </p>
+              <p class="text-badge inline-block text-badge-rounded-border text-badge-small discount-percent">
+                15 %
+                off
+              </p>
+            </div>
           </div>
           <div class="btn-container">
             <button class="button button-primary">
