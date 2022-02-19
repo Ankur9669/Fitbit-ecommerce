@@ -11,8 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
 
-  <link rel="stylesheet"
-    href="https://deploy-preview-10--suspicious-sammet-33f1b3.netlify.app/Components/components.css" />
+
   <link rel="stylesheet" href="https://suspicious-sammet-33f1b3.netlify.app/Components/components.css" />
   <link rel="stylesheet" href="products.css" />
   <link rel="stylesheet" href="common.css" />
@@ -26,15 +25,15 @@
       <img alt="hamburger-icon" src="images/hamburger.svg" class="hamburger-icon" id="hamburger-icon" />
     </div>
     <div class="logo-container">
-      <div class="logo">
+      <a href="index.html" class="logo">
         <img class="logo-image" alt="logo-image" src="images/neatUI.svg" />
         <span class="logo-text">FiT</span>
         BiT
-      </div>
+      </a>
     </div>
     <div class="nav-items-container-end">
       <div class="login-search-bar-container">
-        <button class="button button-primary">Login</button>
+        <a href="login.html" class="button button-primary">Login</a>
         <div class="input-box">
           <input type="text" class="input" value="" onchange="change(this)" required />
           <label class="input-label">Search</label>
@@ -55,6 +54,7 @@
             <span class="number-badge number-badge-md">24+</span>
           </div>
         </a>
+
       </div>
     </div>
   </nav>
@@ -67,7 +67,7 @@
     <div class="spacer-3"></div>
     <div class="wishlist-products-container">
       <!--  Wishlist Item 1 Start  -->
-      <div class="card card-vertical">
+      <div class="card card-vertical card-hover">
         <div class="image-container">
           <img alt="reebok-resistant-tube"
             src="https://cdn.shopify.com/s/files/1/0610/2882/7370/products/product38.jpg?v=1636690872"
@@ -79,13 +79,16 @@
               Reebok Resistant Tube
               <i class="fa fa-heart card-vertical-like-icon" aria-hidden="true"></i>
             </h5>
-            <p class="font-medium weight-semi-bold primary-text-color">
-              &#8377;200
-              <span class="font-extra-small weight-semi-bold strike-through secondary-text-color">&#8377;300
-              </span>
-              <span class="text-badge text-badge-rounded-border text-badge-small discount-percent-horizontal">11 %
-                off</span>
-            </p>
+            <div class="price-container">
+              <p class="font-medium inline-block weight-semi-bold primary-text-color">
+                &#8377;200
+              </p>
+              <p class="font-extra-small inline-block weight-semi-bold strike-through secondary-text-color">&#8377;300
+              </p>
+              <p class="text-badge inline-block text-badge-rounded-border text-badge-small discount-percent">
+                11 %
+                off</p>
+            </div>
           </div>
           <div class="btn-container">
             <button class="button button-primary">
@@ -101,7 +104,7 @@
       <!--  Wishlist Item 1 End  -->
 
       <!--  Wishlist Item 2 Start  -->
-      <div class="card card-vertical">
+      <div class="card card-vertical card-hover">
         <div class="image-container">
           <img alt="reebok-resistant-tube"
             src="https://cdn.shopify.com/s/files/1/0610/2882/7370/products/product38.jpg?v=1636690872"
@@ -113,13 +116,16 @@
               Reebok Resistant Tube
               <i class="fa fa-heart card-vertical-like-icon" aria-hidden="true"></i>
             </h5>
-            <p class="font-medium weight-semi-bold primary-text-color">
-              &#8377;200
-              <span class="font-extra-small weight-semi-bold strike-through secondary-text-color">&#8377;300
-              </span>
-              <span class="text-badge text-badge-rounded-border text-badge-small discount-percent-horizontal">11 %
-                off</span>
-            </p>
+            <div class="price-container">
+              <p class="font-medium inline-block weight-semi-bold primary-text-color">
+                &#8377;200
+              </p>
+              <p class="font-extra-small inline-block weight-semi-bold strike-through secondary-text-color">&#8377;300
+              </p>
+              <p class="text-badge inline-block text-badge-rounded-border text-badge-small discount-percent">
+                11 %
+                off</p>
+            </div>
           </div>
           <div class="btn-container">
             <button class="button button-primary">
@@ -135,7 +141,7 @@
       <!--  Wishlist Item 2 End  -->
 
       <!--  Wishlist Item 3 Start  -->
-      <div class="card card-vertical">
+      <div class="card card-vertical card-hover">
         <div class="image-container">
           <img alt="reebok-resistant-tube"
             src="https://cdn.shopify.com/s/files/1/0610/2882/7370/products/product38.jpg?v=1636690872"
@@ -147,13 +153,16 @@
               Reebok Resistant Tube
               <i class="fa fa-heart card-vertical-like-icon" aria-hidden="true"></i>
             </h5>
-            <p class="font-medium weight-semi-bold primary-text-color">
-              &#8377;200
-              <span class="font-extra-small weight-semi-bold strike-through secondary-text-color">&#8377;300
-              </span>
-              <span class="text-badge text-badge-rounded-border text-badge-small discount-percent-horizontal">11 %
-                off</span>
-            </p>
+            <div class="price-container">
+              <p class="font-medium inline-block weight-semi-bold primary-text-color">
+                &#8377;200
+              </p>
+              <p class="font-extra-small inline-block weight-semi-bold strike-through secondary-text-color">&#8377;300
+              </p>
+              <p class="text-badge inline-block text-badge-rounded-border text-badge-small discount-percent">
+                11 %
+                off</p>
+            </div>
           </div>
           <div class="btn-container">
             <button class="button button-primary">
@@ -177,9 +186,15 @@
   <footer>
     <p class="font-medium-large">Made with ♥ by Ankur Gupta</p>
     <div class="footer-icons-container">
-      <i class="fa fa-github" aria-hidden="true"></i>
-      <i class="fa fa-linkedin" aria-hidden="true"></i>
-      <i class="fa fa-twitter" aria-hidden="true"></i>
+      <a href="#">
+        <i class="fa fa-github footer-icon" aria-hidden="true"></i>
+      </a>
+      <a href="#">
+        <i class="fa fa-linkedin footer-icon" aria-hidden="true"></i>
+      </a>
+      <a href="#">
+        <i class="fa fa-twitter footer-icon" aria-hidden="true"></i>
+      </a>
     </div>
     <p class="font-medium-large">&copy;Copyright 2022</p>
   </footer>
