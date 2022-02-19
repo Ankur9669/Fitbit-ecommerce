@@ -8,6 +8,8 @@
     position: absolute;
     top: 0px;
     height: 100%;
+    /* background-color: var(--light-blue);
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px; */
 }
 .products-container{
     grid-column: 2 / 3;
