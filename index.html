@@ -13,18 +13,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
 
-  <link rel="stylesheet"
-    href="https://deploy-preview-10--suspicious-sammet-33f1b3.netlify.app/Components/components.css" />
   <link rel="stylesheet" href="https://suspicious-sammet-33f1b3.netlify.app/Components/components.css" />
 </head>
 
 <body>
   <!--  ******************************** Navbar Start ********************************  -->
   <nav class="navbar">
-    <div>
+    <div aria-label="menu-icon">
       <img alt="hamburger-icon" src="images/hamburger.svg" class="hamburger-icon" id="hamburger-icon" />
     </div>
-    <div class="logo-container">
+    <div class="logo-container" aria-label="fitbit-logo">
       <div class="logo">
         <img class="logo-image" alt="logo-image" src="images/neatUI.svg" />
         <span class="logo-text">FiT</span>
@@ -33,35 +31,29 @@
     </div>
     <div class="nav-items-container-end">
       <div class="login-search-bar-container">
-        <button class="button button-primary">Login</button>
-        <div class="input-box">
+        <a href="login.html" class="button button-primary">Login</a>
+        <div class="input-box" aria-label="search-box">
           <input type="text" class="input" value="" onchange="change(this)" required />
           <label class="input-label">Search</label>
         </div>
       </div>
 
       <div class="navbar-icons-container">
-        <a href="wishlist.html">
-          <div class="badge-container">
-            <i class="fa fa-heart-o" aria-hidden="true"></i>
-            <span class="number-badge number-badge-md">24+</span>
-          </div>
+        <a href="wishlist.html" class="badge-container">
+          <i class="fa fa-heart-o" aria-hidden="true"></i>
+          <span class="number-badge number-badge-md">24+</span>
         </a>
-
-        <a href="mycart.html">
-          <div class="badge-container">
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            <span class="number-badge number-badge-md">24+</span>
-          </div>
+        <a href="mycart.html" class="badge-container">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          <span class="number-badge number-badge-md">24+</span>
         </a>
-
       </div>
     </div>
   </nav>
   <!--  ******************************** Navbar End ********************************  -->
 
   <!--  ******************************** Hero Section Start ********************************  -->
-  <div class="hero-section">
+  <section class="hero-section">
     <img class="img-responsive"
       src="https://cdn.shopify.com/s/files/1/0610/2882/7370/files/slideshowV1-bg1.jpg?v=1637316417" alt="hero-image" />
     <div class="overlay-container">
@@ -71,13 +63,12 @@
       <h1 class="h1 weight-semi-bold primary-text-color margin-vertical-xs">
         Fitness Club
       </h1>
-      <a class="button button-primary margin-vertical-lg" href="products.html">
+      <button class="button button-primary margin-vertical-lg">
         Shop now
-      </a>
+      </button>
     </div>
-  </div>
+  </section>
   <!--  ******************************** Hero Section End ********************************  -->
-
 
   <!--  ******************************** New Arrivals Section Start ********************************  -->
   <div class="spacer-3"></div>
@@ -230,9 +221,15 @@
   <footer>
     <p class="font-medium-large">Made with ♥ by Ankur Gupta</p>
     <div class="footer-icons-container">
-      <i class="fa fa-github" aria-hidden="true"></i>
-      <i class="fa fa-linkedin" aria-hidden="true"></i>
-      <i class="fa fa-twitter" aria-hidden="true"></i>
+      <a href="#">
+        <i class="fa fa-github footer-icon" aria-hidden="true"></i>
+      </a>
+      <a href="#">
+        <i class="fa fa-linkedin footer-icon" aria-hidden="true"></i>
+      </a>
+      <a href="#">
+        <i class="fa fa-twitter footer-icon" aria-hidden="true"></i>
+      </a>
     </div>
     <p class="font-medium-large">&copy;Copyright 2022</p>
   </footer>

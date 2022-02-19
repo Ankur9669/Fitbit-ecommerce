@@ -1,48 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+
 body{
     background-color: var(--background-color);
     font-family: poppins;
     overflow-x: hidden;
-    max-width: 125rem;
+    max-width: 2000px;
     margin: auto;
-}
-:root{
-    --light-blue: #f2fbff;
-    --color-black: #000000;
-    --color-white: #ffffff;
-    --navbar-shadow: #b5b5b5;
 }
 *{
     box-sizing: border-box;
     margin: 0;
-}
-ul{
-    margin: 0px;
-    padding: 0px;
-}
-.navbar{
-    box-shadow: 0px 5px 3px 0px var(--navbar-shadow);
-}
-
-.quantity-btn-container{
-    display: flex;
-    align-items: center;
-    margin: 1rem 0;
-}
-.quantity-btn{
-    cursor: pointer;
-    background-color: transparent;
-}
-.quantity-info{
-    display: inline-block;
-    border: 1px solid var(--color-gray);
-    font-size: 1.3rem;
-    padding: 2px 1rem;
-    margin: 0 0.5rem;
-}
-.quantity-btn i{
-    font-size: 2rem;
 }
 footer{
     display: flex;
@@ -51,8 +19,8 @@ footer{
     align-items: center;
     background-color: var(--primary-color);
     width: 100%;
-    min-height: 12.5rem;
-    color: var(--color-white);
+    min-height: 200px;
+    color: white;
 }
 .footer-icons-container{
     display: flex;
@@ -60,18 +28,10 @@ footer{
     width: 16rem;
     margin: 1rem 0;
 }
-.footer-icons-container i{
+.footer-icons-container .footer-icon{
     font-size: 2.5rem;
     cursor: pointer;
 }
-.footer-icons-container i:hover{
+.footer-icons-container .footer-icon:hover{
     transform: scale(1.1);
-}
-@media only screen and (max-width: 345px){
-    .card-vertical{
-        margin: 0 2rem;
-    }
-    .card-vertical .image-container {
-        height: fit-content;
-    }
 }
