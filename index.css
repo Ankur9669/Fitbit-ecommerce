@@ -5,6 +5,10 @@
 .hero-section img{
     max-height: 43.7rem;
 }
+.hero-section a{
+    display: flex;
+    justify-content: center;
+}
 .overlay-container{
     position: absolute;
     left: 25%;
@@ -38,7 +42,7 @@
     transition: 0.3s;
 }
 .card-hover:hover{
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform: scale(1.1121);
 }
 .card-new-arrival{
     cursor: pointer;
@@ -58,7 +62,7 @@
     background-color: white;
 }
 .card-new-arrival:hover{
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform: scale(1.1121);
 }
 .home-section-heading{
     position: relative;
@@ -85,8 +89,8 @@
     justify-content: space-evenly;
 }
 .featured-brands-container img{
-    width: 300px;
-    height: 180px;
+    width: 18.75rem;
+    height: 11.25rem;
     object-fit: cover;
 }
 @media only screen and (max-width: 960px){
