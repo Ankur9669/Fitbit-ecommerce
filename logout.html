@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FITBIT</title>
+
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://suspicious-sammet-33f1b3.netlify.app/Components/components.css" />
+    <link rel="stylesheet" href="signup.css" />
+</head>
+
+<body>
+    <!--  ******************************** Navbar Start ********************************  -->
+    <nav class="navbar">
+        <div aria-label="menu-icon">
+            <img alt="hamburger-icon" src="images/hamburger.svg" class="hamburger-icon" id="hamburger-icon" />
+        </div>
+        <div class="logo-container" aria-label="fitbit-logo">
+            <div class="logo">
+                <img class="logo-image" alt="logo-image" src="images/neatUI.svg" />
+                <span class="logo-text">FiT</span>
+                BiT
+            </div>
+        </div>
+        <div class="nav-items-container-end">
+            <div class="login-search-bar-container">
+                <a href="login.html" class="button button-primary">Login</a>
+                <div class="input-box" aria-label="search-box">
+                    <input type="text" class="input" value="" onchange="change(this)" required />
+                    <label class="input-label">Search</label>
+                </div>
+            </div>
+
+            <div class="navbar-icons-container">
+                <a href="wishlist.html" class="badge-container">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    <span class="number-badge number-badge-md">24+</span>
+                </a>
+                <a href="mycart.html" class="badge-container">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <span class="number-badge number-badge-md">24+</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!--  ******************************** Navbar End ********************************  -->
+
+    <main class="logout-container">
+        <div>
+            <h2 class="font-large centered-text">You are succesfully logged out</h2>
+            <div class="spacer-1"></div>
+            <div class="logout-btn-container">
+                <a href="login.html" class="button button-primary margin-horizontal-sm">Login</a>
+                <a href="index.html" class="button button-primary margin-horizontal-sm">Home</a>
+            </div>
+
+        </div>
+
+    </main>
+</body>
