@@ -26,3 +26,5 @@ It contains the following screens:-
 - ForgetPassword: [https://fitbit-ecomm.netlify.app/forgotpassword.html](https://fitbit-ecomm.netlify.app/forgotpassword.html)
 
 - SingleProductPage: [https://fitbit-ecomm.netlify.app/singleproduct.html](https://fitbit-ecomm.netlify.app/singleproduct.html)
+
+- User Profile: [https://fitbit-ecomm.netlify.app/singleproduct.html](https://fitbit-ecomm.netlify.app/singleproduct.html)
