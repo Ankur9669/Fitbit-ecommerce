@@ -1,7 +1,7 @@
 # Fitbit-ecommerce
 
 A one stop place for all the things that you need to be fit.
-![fitbit-image]()
+![fitbit-image](https://github.com/Ankur9669/Fitbit-ecommerce/blob/Readme/images/fitbit.png)
 
 ---
 
