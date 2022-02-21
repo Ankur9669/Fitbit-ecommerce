@@ -45,6 +45,16 @@
     justify-content: space-between;
     margin: 0.4rem;
 }
+
+/* Address Item */
+.address-item{
+    margin: 1rem 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--gray-color);
+}
+.address-btn-container{
+    margin: 0.5rem 0;
+}
 @media only screen and (max-width: 720px){
     .user-profile-container{
         display: grid;
