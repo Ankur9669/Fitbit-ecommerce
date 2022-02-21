@@ -32,7 +32,7 @@
 .user-profile-container{
     display: grid;
     grid-template-columns: 14.3rem 1fr;
-    margin: 1rem 0 0 0;
+    margin-top: 1rem;
 }
 .user-info-container{
     display: flex;
