@@ -27,4 +27,6 @@ It contains the following screens:-
 
 - SingleProductPage: [https://fitbit-ecomm.netlify.app/singleproduct.html](https://fitbit-ecomm.netlify.app/singleproduct.html)
 
-- User Profile: [https://fitbit-ecomm.netlify.app/singleproduct.html](https://fitbit-ecomm.netlify.app/singleproduct.html)
+- User Profile: [https://fitbit-ecomm.netlify.app/userprofile.html](https://fitbit-ecomm.netlify.app/userprofile.html)
+
+- Address Management: [https://fitbit-ecomm.netlify.app/address.html](https://fitbit-ecomm.netlify.app/address.html)
