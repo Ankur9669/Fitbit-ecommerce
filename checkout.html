@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FITBIT</title>
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://suspicious-sammet-33f1b3.netlify.app/Components/components.css" />
+    <link rel="stylesheet" href="mycart.css" />
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="checkout.css" />
+</head>
+
+<body>
+    <!--  ******************************** Navbar Start ********************************  -->
+    <nav class="navbar">
+        <div>
+            <img alt="hamburger-icon" src="images/hamburger.svg" class="hamburger-icon" id="hamburger-icon" />
+        </div>
+        <div class="logo-container">
+            <a class="logo" href="index.html">
+                <img class="logo-image" alt="logo-image" src="images/neatUI.svg" />
+                <span class="logo-text">FiT</span>
+                BiT
+            </a>
+        </div>
+        <div class="nav-items-container-end">
+            <div class="login-search-bar-container">
+                <a href="logout.html" class="button button-primary">Logout</a>
+                <div class="input-box">
+                    <input type="text" class="input" value="" onchange="change(this)" required />
+                    <label class="input-label">Search</label>
+                </div>
+            </div>
+
+            <div class="navbar-icons-container">
+                <a href="wishlist.html">
+                    <div class="badge-container">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        <span class="number-badge number-badge-md">24+</span>
+                    </div>
+                </a>
+                <a href="mycart.html">
+                    <div class="badge-container">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <span class="number-badge number-badge-md">24+</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!--  ******************************** Navbar End ********************************  -->
+
+    <!--  ******************************** Checkout Container Start ********************************  -->
+    <div class="spacer-3"></div>
+    <main class="checkout-container">
+        <h2 class="h2 checkout-heading">Checkout</h2>
+        <div class="checkout-wrapper-1">
+            <div class="user-info-container" aria-label="user-info">
+                <p class="font-large weight-semi-bold primary-text-color">Ankur Gupta</p>
+                <p class="font-medium-large">gankur860@gmail.com</p>
+                <p class="font-medium-large">+912311221</p>
+            </div>
+            <div class="delivery-info-container" aria-label="delivery-info">
+                <p class="font-large weight-semi-bold primary-text-color">Delivery Address</p>
+                <p class="font-medium-large">Deliver to: John Doe, 560078</p>
+                <p class="font-medium-large">#1/4 , 100ft Ring Road, Jp Nagar - 4 Phase, Dollars Colony, Bangalore</p>
+            </div>
+            <div class="order-summary-container">
+                <p class="font-large weight-semi-bold primary-text-color">Order Summary</p>
+
+                <!-- ************************** Products Start  ***************************** -->
+
+                <!--  Product One  -->
+                <div class="card card-horizontal order-summary-card" aria-label="your-product">
+                    <div class="image-container ">
+                        <img alt="card-image"
+                            src="https://cdn.shopify.com/s/files/1/0610/2882/7370/products/product38.jpg?v=1636690872"
+                            class="img-responsive order-summary-card-image" />
+                    </div>
+                    <div class="wrapper">
+                        <div class="text-container">
+                            <h3 class="font-medium-large weight-semi-bold primary-text-color">
+                                Reebok Resistant Tube
+                            </h3>
+                            <p class="font-medium-large weight-semi-bold primary-text-color">
+                                &#8377;200
+                                <span
+                                    class="font-medium weight-semi-bold strike-through secondary-text-color">&#8377;300
+                                </span>
+                            </p>
+                            <div class="margin-vertical-sm"></div>
+                            <span class="text-badge text-badge-rounded-border text-badge-medium">
+                                11 % off
+                            </span>
+                            <div class="margin-vertical-sm"></div>
+                            <p class="font-medium">Quantity: 2</p>
+                            <div class="margin-vertical-sm"></div>
+                            <p class="font-medium primary-text-color">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit.
+                                Aenean non ligula ante. Praes,</p>
+                        </div>
+                    </div>
+                </div>
+                <!--  Product One  -->
+
+                <!--  Product Two  -->
+                <div class="card card-horizontal order-summary-card" aria-label="your-product">
+                    <div class="image-container ">
+                        <img alt="card-image"
+                            src="https://cdn.shopify.com/s/files/1/0610/2882/7370/products/product38.jpg?v=1636690872"
+                            class="img-responsive order-summary-card-image" />
+                    </div>
+                    <div class="wrapper">
+                        <div class="text-container">
+                            <h3 class="font-medium-large weight-semi-bold primary-text-color">
+                                Reebok Resistant Tube
+                            </h3>
+                            <p class="font-medium-large weight-semi-bold primary-text-color">
+                                &#8377;200
+                                <span
+                                    class="font-medium weight-semi-bold strike-through secondary-text-color">&#8377;300
+                                </span>
+                            </p>
+                            <div class="margin-vertical-sm"></div>
+                            <span class="text-badge text-badge-rounded-border text-badge-medium">
+                                11 % off
+                            </span>
+                            <div class="margin-vertical-sm"></div>
+                            <p class="font-medium">Quantity: 2</p>
+                            <div class="margin-vertical-sm"></div>
+                            <p class="font-medium primary-text-color">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit.
+                                Aenean non ligula ante. Praes,</p>
+                        </div>
+                    </div>
+                </div>
+                <!--  Product Two  -->
+            </div>
+            <!-- ************************** Products End  ***************************** -->
+        </div>
+        <div class="checkout-wrapper-2">
+
+            <!-- ************************** Price Summary Card  ***************************** -->
+            <div class="card card-vertical price-details-card">
+                <div class="wrapper">
+                    <div class="text-container">
+                        <h5
+                            class="font-medium-large weight-semi-bold primary-text-color price-details-card-heading margin-vertical-sm">
+                            Price Details
+                        </h5>
+                        <div class="price-details-section">
+                            <div
+                                class="font-medium weight-normal primary-text-color price-details-item margin-vertical-sm">
+                                <span>Price (2 Items)</span>
+                                <span>&#8377;2000</span>
+                            </div>
+                            <div
+                                class="font-medium weight-normal primary-text-color price-details-item margin-vertical-sm">
+                                <span>Discount</span>
+                                <span>-&#8377;180</span>
+                            </div>
+                            <div
+                                class="font-medium weight-normal primary-text-color price-details-item margin-vertical-sm">
+                                <span>Delivary Charges</span>
+                                <span>&#8377;40</span>
+                            </div>
+                        </div>
+                        <div class="price-details-section">
+                            <div
+                                class="font-medium weight-semi-bold primary-text-color price-details-item margin-vertical-sm">
+                                <span>TOTAL AMOUNT</span>
+                                <span>&#8377;1860</span>
+                            </div>
+                        </div>
+                        <div class="price-details-section">
+                            <p
+                                class="font-medium weight-semi-bold primary-text-color price-details-item margin-vertical-sm">
+                                You will save ₹1999 on this order
+                            </p>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <button class="button button-primary">
+                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- ************************** Price Summary Card  ***************************** -->
+        </div>
+    </main>
+
+    <!--  ******************************** Checkout Container End ********************************  -->
+
+    <!--  ******************************** Footer Start ********************************  -->
+    <div class="spacer-3"></div>
+    <footer>
+        <p class="font-medium-large">Made with ♥ by Ankur Gupta</p>
+        <div class="footer-icons-container">
+            <a href="#">
+                <i class="fa fa-github footer-icon" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-linkedin footer-icon" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-twitter footer-icon" aria-hidden="true"></i>
+            </a>
+        </div>
+        <p class="font-medium-large">&copy;Copyright 2022</p>
+    </footer>
+    <!--  ******************************** Footer End ********************************  -->
+</body>
+
+</html>
