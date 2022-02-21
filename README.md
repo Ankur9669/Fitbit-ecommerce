@@ -30,3 +30,5 @@ It contains the following screens:-
 - User Profile: [https://fitbit-ecomm.netlify.app/userprofile.html](https://fitbit-ecomm.netlify.app/userprofile.html)
 
 - Address Management: [https://fitbit-ecomm.netlify.app/address.html](https://fitbit-ecomm.netlify.app/address.html)
+
+- Checkout Page: [https://fitbit-ecomm.netlify.app/checkout.html](https://fitbit-ecomm.netlify.app/checkout.html)
