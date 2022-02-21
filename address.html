@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FITBIT</title>
+
+    <link rel="stylesheet" href="userprofile.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://suspicious-sammet-33f1b3.netlify.app/Components/components.css" />
+    <link rel="stylesheet" href="common.css" />
+</head>
+
+<body>
+    <!--  ******************************** Navbar Start ********************************  -->
+    <nav class="navbar">
+        <div aria-label="menu-icon">
+            <img alt="hamburger-icon" src="images/hamburger.svg" class="hamburger-icon" id="hamburger-icon" />
+        </div>
+        <a href="index.html" class="logo-container" aria-label="fitbit-logo">
+            <div class="logo">
+                <img class="logo-image" alt="logo-image" src="images/neatUI.svg" />
+                <span class="logo-text">FiT</span>
+                BiT
+            </div>
+        </a>
+        <div class="nav-items-container-end">
+            <div class="login-search-bar-container">
+                <a href="login.html" class="button button-primary">Login</a>
+                <div class="input-box" aria-label="search-box">
+                    <input type="text" class="input" value="" onchange="change(this)" required />
+                    <label class="input-label">Search</label>
+                </div>
+            </div>
+
+            <div class="navbar-icons-container">
+                <a href="wishlist.html" class="badge-container">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    <span class="number-badge number-badge-md">24+</span>
+                </a>
+                <a href="mycart.html" class="badge-container">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <span class="number-badge number-badge-md">24+</span>
+                </a>
+                <a href="userprofile.html">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!--  ******************************** Navbar End ********************************  -->
+
+
+    <!--  ******************************** Profile Container Start ********************************  -->
+
+    <main class="profile-container">
+        <div class="profile" aria-label="profile-page">
+            <div class="profile-btn-container">
+                <div class="profile-btn-wrapper">
+                    <a href="userprofile.html" class="button button-outline-primary">Profile</a>
+                    <a href="address.html" class="button button-primary">Addresses</a>
+                </div>
+                <div class="profile-btn-wrapper">
+                    <button class="button button-outline-primary">Orders</button>
+                    <button class="button button-outline-primary">Setting</button>
+                </div>
+            </div>
+            <div class="address-container">
+                <!--   Address One   -->
+                <div class="address-item" aria-label="address">
+                    <p class="font-medium-large weight-semi-bold primary-text-color">Ankur Gupta</p>
+                    <p class="font-medium weight-normal primary-text-color">#1/4 , 100ft Ring Road, Jp Nagar - 4
+                        Phase, Dollars Colony</p>
+                    <p class="font-medium weight-normal primary-text-color">Bangalore, Maharashtra 560078</p>
+                    <p class="font-medium weight-normal primary-text-color">India</p>
+                    <p class="font-medium weight-normal primary-text-color">Phone number:5120995324</p>
+
+                    <div class="address-btn-container">
+                        <button class="button button-primary">Edit</button>
+                        <button class="button button-outline-primary">Remove</button>
+                    </div>
+                </div>
+                <!--   Address One   -->
+
+                <!--   Address Two   -->
+                <div class="address-item" aria-label="address">
+                    <p class="font-medium-large weight-semi-bold primary-text-color">Ankur Gupta</p>
+                    <p class="font-medium weight-normal primary-text-color">#1/4 , 100ft Ring Road, Jp Nagar - 4
+                        Phase, Dollars Colony</p>
+                    <p class="font-medium weight-normal primary-text-color">Bangalore, Maharashtra 560078</p>
+                    <p class="font-medium weight-normal primary-text-color">India</p>
+                    <p class="font-medium weight-normal primary-text-color">Phone number:5120995324</p>
+
+                    <div class="address-btn-container">
+                        <button class="button button-primary">Edit</button>
+                        <button class="button button-outline-primary">Remove</button>
+                    </div>
+                </div>
+                <!--   Address Two   -->
+
+                <!--   Address Three   -->
+                <div class="address-item" aria-label="address">
+                    <p class="font-medium-large weight-semi-bold primary-text-color">Ankur Gupta</p>
+                    <p class="font-medium weight-normal primary-text-color">#1/4 , 100ft Ring Road, Jp Nagar - 4
+                        Phase, Dollars Colony</p>
+                    <p class="font-medium weight-normal primary-text-color">Bangalore, Maharashtra 560078</p>
+                    <p class="font-medium weight-normal primary-text-color">India</p>
+                    <p class="font-medium weight-normal primary-text-color">Phone number:5120995324</p>
+
+                    <div class="address-btn-container">
+                        <button class="button button-primary">Edit</button>
+                        <button class="button button-outline-primary">Remove</button>
+                    </div>
+                </div>
+                <!--   Address Three   -->
+            </div>
+        </div>
+    </main>
+
+    <!--  ******************************** Profile Container End ********************************  -->
+
+    <!--  ******************************** Footer Start ********************************  -->
+
+    <footer>
+        <p class="font-medium-large">Made with ♥ by Ankur Gupta</p>
+        <div class="footer-icons-container">
+            <a href="#">
+                <i class="fa fa-github footer-icon" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-linkedin footer-icon" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-twitter footer-icon" aria-hidden="true"></i>
+            </a>
+        </div>
+        <p class="font-medium-large">&copy;Copyright 2022</p>
+    </footer>
+    <!--  ******************************** Footer End ********************************  -->
+</body>
+
+</html>

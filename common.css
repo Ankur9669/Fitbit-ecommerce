@@ -12,6 +12,7 @@ body{
     --color-black: #000000;
     --color-white: #ffffff;
     --navbar-shadow: #b5b5b5;
+    --gray-color: gray;
 }
 *{
     box-sizing: border-box;
@@ -23,6 +24,9 @@ ul{
 }
 .navbar{
     box-shadow: 0px 5px 3px 0px var(--navbar-shadow);
+}
+.navbar-icons-container{
+    min-width: 10rem;
 }
 
 .quantity-btn-container{
